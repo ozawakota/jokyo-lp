@@ -1,0 +1,27 @@
+/*
+ * サイト内パラメータ設定ファイル
+ */
+// カラー
+$c-black: #333333;
+$c-white: #ffffff;
+$c-gray: #f4f4f4;
+$c-lightgray: #dddddd;
+$c-main: #0a55aa;
+$c-sub: #00274d;
+$c-darkorange: #be741f;
+$c-lightblue: #14a0de;
+$c-lightgreen: #33a08f;
+
+// サイト内フォントサイズ設定
+$default-min-bp: 375px; // _functions.scss / fluid-textで使用
+$default-max-bp: 1366px; // _functions.scss / fluid-textで使用
+$root-font-size: 16px;
+$mq-max-bp: 768px; // 768px以下　スマホ
+$mq-min-bp: 769px; // 769px以上　スマホ
+
+$base-font:
+  メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
+  游ゴシック, 'Yu Gothic', YuGothic, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic',
+  sans-serif;
+$accent-font: 'Montserrat', sans-serif; // サイト内タイトル用フォント
+$accent-en-font: 'Bebas Neue', sans-serif; // サイト内タイトル(英語)用フォント

@@ -1,0 +1,101 @@
+@use 'sass:math';
+
+:root {
+  --c-black: #{$c-black};
+  --c-white: #{$c-white};
+  --c-gray: #{$c-gray};
+  --c-lightgray: #{$c-lightgray};
+  --c-main: #{$c-main};
+  --c-sub: #{$c-sub};
+  --c-darkorange: #{$c-darkorange};
+  --c-lightblue: #{$c-lightblue};
+  --c-lightgreen: #{$c-lightgreen};
+}
+
+html {
+  font-size: math.div($root-font-size, 16px) * 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $base-font;
+  letter-spacing: 0.05em;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: var(--c-black);
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-feature-settings: 'palt';
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-black);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $accent-font;
+  color: var(--c-black);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 0;
+  font-weight: 500;
+  color: var(--c-black);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.is-pc {
+  display: none !important;
+
+  @include mq('tb') {
+    display: block !important;
+  }
+}
+
+.is-sp {
+  @include mq('tb') {
+    display: none !important;
+  }
+}

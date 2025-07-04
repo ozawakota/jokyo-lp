@@ -1,0 +1,50 @@
+---
+import { Header } from '~/components/organisms/Header'
+
+// スタイル共通設定
+import 'normalize.css'
+import '~/styles/common.scss'
+import '~/styles/fonts.scss'
+// スタイルモジュールのインポート
+import styles from './Layout.module.scss'
+
+export interface Props {
+  title?: string
+  description?: string
+  siteName?: string
+}
+
+const {
+  title,
+  description = '製品カタログサイトの説明文',
+  siteName = '製品カタログサイト',
+} = Astro.props
+
+// タイトルが指定されている場合はサイト名と組み合わせ、なければサイト名のみ
+const pageTitle = title ? `${title} | ${siteName}` : siteName
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+  </head>
+  <body>
+    <div class={styles.wrapper}>
+      <Header />
+      <main>
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
