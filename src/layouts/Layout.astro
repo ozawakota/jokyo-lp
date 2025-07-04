@@ -1,50 +1,3270 @@
 ---
 import { Header } from '~/components/organisms/Header'
+import { Footer } from '~/components/organisms/Footer'
 
 // スタイル共通設定
-import 'normalize.css'
-import '~/styles/common.scss'
-import '~/styles/fonts.scss'
 // スタイルモジュールのインポート
 import styles from './Layout.module.scss'
-
-export interface Props {
-  title?: string
-  description?: string
-  siteName?: string
-}
-
-const {
-  title,
-  description = '製品カタログサイトの説明文',
-  siteName = '製品カタログサイト',
-} = Astro.props
-
-// タイトルが指定されている場合はサイト名と組み合わせ、なければサイト名のみ
-const pageTitle = title ? `${title} | ${siteName}` : siteName
 ---
 
 <!doctype html>
-<html lang="ja">
+<html dir="ltr" lang="ja" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      img:is([sizes='auto' i], [sizes^='auto,' i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+
+    <!-- All in One SEO 4.8.1.1 - aioseo.com -->
+    <title>
+      【アートメイクの感動をあなたに】THE ARTMAKE TOKYO 東京銀座院・大阪梅田院 |
+      眉アートメイク・フェザーブロウ
+    </title>
     <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,shrink-to-fit=no"
+      name="description"
+      content="ふんわり羽のように軽い自然な眉アートメイク「フェザーブロウ」。独自の「似合わせデザイン」で、理想の眉毛を叶えます。国内トップクラスの技術と実績で業界を牽引するアートメイクアーティストが多数在籍。駅チカ！東京銀座徒歩1分、大阪梅田徒歩1分。"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <meta name="description" content={description} />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={description} />
+    <meta name="robots" content="max-image-preview:large" />
+    <link
+      rel="stylesheet"
+      id="ao_optimized_gfonts"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap"
+    /><link rel="canonical" href="https://tat1234.xsrv.jp/brow/" />
+    <meta name="generator" content="All in One SEO (AIOSEO) 4.8.1.1" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:site_name"
+      content="The Artmake Tokyo（ジ・アートメイク東京） - 東京銀座・大阪のトップアーティストによる適正価格のアートメイクならThe ARTMAKE TOKYO。ブロウ・リップはもちろん、アートメイク除去やリタッチも当院で承ります。"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="【アートメイクの感動をあなたに】THE ARTMAKE TOKYO 東京銀座院・大阪梅田院 | 眉アートメイク・フェザーブロウ"
+    />
+    <meta
+      property="og:description"
+      content="ふんわり羽のように軽い自然な眉アートメイク「フェザーブロウ」。独自の「似合わせデザイン」で、理想の眉毛を叶えます。国内トップクラスの技術と実績で業界を牽引するアートメイクアーティストが多数在籍。駅チカ！東京銀座徒歩1分、大阪梅田徒歩1分。"
+    />
+    <meta property="og:url" content="https://tat1234.xsrv.jp/brow/" />
+    <meta
+      property="article:published_time"
+      content="2021-07-27T06:55:17+00:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2025-05-26T04:00:28+00:00"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="【アートメイクの感動をあなたに】THE ARTMAKE TOKYO 東京銀座院・大阪梅田院 | 眉アートメイク・フェザーブロウ"
+    />
+    <meta
+      name="twitter:description"
+      content="ふんわり羽のように軽い自然な眉アートメイク「フェザーブロウ」。独自の「似合わせデザイン」で、理想の眉毛を叶えます。国内トップクラスの技術と実績で業界を牽引するアートメイクアーティストが多数在籍。駅チカ！東京銀座徒歩1分、大阪梅田徒歩1分。"
+    />
+    <script type="application/ld+json" class="aioseo-schema">
+      {
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/tat1234.xsrv.jp\/brow\/#breadcrumblist",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "@id": "https:\/\/tat1234.xsrv.jp\/#listItem",
+                "position": 1,
+                "name": "\u30db\u30fc\u30e0",
+                "item": "https:\/\/tat1234.xsrv.jp\/",
+                "nextItem": {
+                  "@type": "ListItem",
+                  "@id": "https:\/\/tat1234.xsrv.jp\/brow\/#listItem",
+                  "name": "\u3010\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u306e\u611f\u52d5\u3092\u3042\u306a\u305f\u306b\u3011THE ARTMAKE TOKYO \u6771\u4eac\u9280\u5ea7\u9662\u30fb\u5927\u962a\u6885\u7530\u9662 | \u7709\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u30fb\u30d5\u30a7\u30b6\u30fc\u30d6\u30ed\u30a6"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "@id": "https:\/\/tat1234.xsrv.jp\/brow\/#listItem",
+                "position": 2,
+                "name": "\u3010\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u306e\u611f\u52d5\u3092\u3042\u306a\u305f\u306b\u3011THE ARTMAKE TOKYO \u6771\u4eac\u9280\u5ea7\u9662\u30fb\u5927\u962a\u6885\u7530\u9662 | \u7709\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u30fb\u30d5\u30a7\u30b6\u30fc\u30d6\u30ed\u30a6",
+                "previousItem": {
+                  "@type": "ListItem",
+                  "@id": "https:\/\/tat1234.xsrv.jp\/#listItem",
+                  "name": "\u30db\u30fc\u30e0"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https:\/\/tat1234.xsrv.jp\/#organization",
+            "name": "\u3010 The Artmake Tokyo\uff08\u30b8\u30fb\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u6771\u4eac\uff09\u3011",
+            "description": "\u6771\u4eac\u9280\u5ea7\u30fb\u5927\u962a\u306e\u30c8\u30c3\u30d7\u30a2\u30fc\u30c6\u30a3\u30b9\u30c8\u306b\u3088\u308b\u9069\u6b63\u4fa1\u683c\u306e\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u306a\u3089The ARTMAKE TOKYO\u3002\u30d6\u30ed\u30a6\u30fb\u30ea\u30c3\u30d7\u306f\u3082\u3061\u308d\u3093\u3001\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u9664\u53bb\u3084\u30ea\u30bf\u30c3\u30c1\u3082\u5f53\u9662\u3067\u627f\u308a\u307e\u3059\u3002",
+            "url": "https:\/\/tat1234.xsrv.jp\/"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https:\/\/tat1234.xsrv.jp\/brow\/#webpage",
+            "url": "https:\/\/tat1234.xsrv.jp\/brow\/",
+            "name": "\u3010\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u306e\u611f\u52d5\u3092\u3042\u306a\u305f\u306b\u3011THE ARTMAKE TOKYO \u6771\u4eac\u9280\u5ea7\u9662\u30fb\u5927\u962a\u6885\u7530\u9662 | \u7709\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u30fb\u30d5\u30a7\u30b6\u30fc\u30d6\u30ed\u30a6",
+            "description": "\u3075\u3093\u308f\u308a\u7fbd\u306e\u3088\u3046\u306b\u8efd\u3044\u81ea\u7136\u306a\u7709\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u300c\u30d5\u30a7\u30b6\u30fc\u30d6\u30ed\u30a6\u300d\u3002\u72ec\u81ea\u306e\u300c\u4f3c\u5408\u308f\u305b\u30c7\u30b6\u30a4\u30f3\u300d\u3067\u3001\u7406\u60f3\u306e\u7709\u6bdb\u3092\u53f6\u3048\u307e\u3059\u3002\u56fd\u5185\u30c8\u30c3\u30d7\u30af\u30e9\u30b9\u306e\u6280\u8853\u3068\u5b9f\u7e3e\u3067\u696d\u754c\u3092\u727d\u5f15\u3059\u308b\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u30a2\u30fc\u30c6\u30a3\u30b9\u30c8\u304c\u591a\u6570\u5728\u7c4d\u3002\u99c5\u30c1\u30ab\uff01\u6771\u4eac\u9280\u5ea7\u5f92\u6b691\u5206\u3001\u5927\u962a\u6885\u7530\u5f92\u6b691\u5206\u3002",
+            "inLanguage": "ja",
+            "isPartOf": { "@id": "https:\/\/tat1234.xsrv.jp\/#website" },
+            "breadcrumb": {
+              "@id": "https:\/\/tat1234.xsrv.jp\/brow\/#breadcrumblist"
+            },
+            "datePublished": "2021-07-27T15:55:17+09:00",
+            "dateModified": "2025-05-26T13:00:28+09:00"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https:\/\/tat1234.xsrv.jp\/#website",
+            "url": "https:\/\/tat1234.xsrv.jp\/",
+            "name": "The Artmake Tokyo\uff08\u30b8\u30fb\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u6771\u4eac\uff09",
+            "description": "\u6771\u4eac\u9280\u5ea7\u30fb\u5927\u962a\u306e\u30c8\u30c3\u30d7\u30a2\u30fc\u30c6\u30a3\u30b9\u30c8\u306b\u3088\u308b\u9069\u6b63\u4fa1\u683c\u306e\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u306a\u3089The ARTMAKE TOKYO\u3002\u30d6\u30ed\u30a6\u30fb\u30ea\u30c3\u30d7\u306f\u3082\u3061\u308d\u3093\u3001\u30a2\u30fc\u30c8\u30e1\u30a4\u30af\u9664\u53bb\u3084\u30ea\u30bf\u30c3\u30c1\u3082\u5f53\u9662\u3067\u627f\u308a\u307e\u3059\u3002",
+            "inLanguage": "ja",
+            "publisher": { "@id": "https:\/\/tat1234.xsrv.jp\/#organization" }
+          }
+        ]
+      }
+    </script>
+    <!-- All in One SEO -->
+
+    <!-- Start VWO Common Smartcode -->
+    <script data-cfasync="false" nowprocket type="text/javascript">
+      var _vwo_clicks = 10
+    </script>
+    <!-- End VWO Common Smartcode -->
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script data-cfasync="false" nowprocket type="text/javascript" id="vwoCode">
+      /* Fix: wp-rocket (application/ld+json) */
+      window._vwo_code ||
+        (function () {
+          var account_id = 762095,
+            version = 2.1,
+            settings_tolerance = 2000,
+            library_tolerance = 2500,
+            use_existing_jquery = false,
+            hide_element = 'body',
+            hide_element_style =
+              'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector('#vwoCode'),
+            cK = '_vwo_' + account_id + '_settings',
+            cc = {}
+          try {
+            var c = JSON.parse(
+              localStorage.getItem('_vwo_' + account_id + '_config'),
+            )
+            cc = c && typeof c === 'object' ? c : {}
+          } catch (e) {}
+          var stT = cc.stT === 'session' ? w.sessionStorage : w.localStorage
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== 'undefined'
+                ? use_existing_jquery
+                : undefined
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== 'undefined'
+                ? library_tolerance
+                : undefined
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance
+            },
+            hide_element_style: function () {
+              return '{' + (cc.hES || hide_element_style) + '}'
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName('first-contentful-paint')[0]) {
+                return ''
+              }
+              return typeof cc.hE === 'string' ? cc.hE : hide_element
+            },
+            getVersion: function () {
+              return version
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true
+                var t = d.getElementById('_vis_opt_path_hides')
+                if (t) t.parentNode.removeChild(t)
+                if (e)
+                  new Image().src =
+                    'https://dev.visualwebsiteoptimizer.com/ee.gif?a=' +
+                    account_id +
+                    e
+              }
+            },
+            finished: function () {
+              return f
+            },
+            addScript: function (e) {
+              var t = d.createElement('script')
+              t.type = 'text/javascript'
+              if (e.src) {
+                t.src = e.src
+              } else {
+                t.text = e.text
+              }
+              d.getElementsByTagName('head')[0].appendChild(t)
+            },
+            load: function (e, t) {
+              var i = this.getSettings(),
+                n = d.createElement('script'),
+                r = this
+              t = t || {}
+              if (i) {
+                n.textContent = i
+                d.getElementsByTagName('head')[0].appendChild(n)
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK)
+                  r.load(e)
+                }
+              } else {
+                var o = new XMLHttpRequest()
+                o.open('GET', e, true)
+                o.withCredentials = !t.dSC
+                o.responseType = t.responseType || 'text'
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e)
+                  }
+                  if (o.status === 200 || o.status === 304) {
+                    _vwo_code.addScript({ text: o.responseText })
+                  } else {
+                    _vwo_code.finish('&e=loading_failure:' + e)
+                  }
+                }
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e)
+                  }
+                  _vwo_code.finish('&e=loading_failure:' + e)
+                }
+                o.send()
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK)
+                if (!e) {
+                  return
+                }
+                e = JSON.parse(e)
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK)
+                  return
+                }
+                return e.s
+              } catch (e) {
+                return
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf('__vwo_disable__') > -1) return
+              var e = this.settings_tolerance()
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish()
+                stT.removeItem(cK)
+              }, e)
+              var t
+              if (this.hide_element() !== 'body') {
+                t = d.createElement('style')
+                var i = this.hide_element(),
+                  n = i ? i + this.hide_element_style() : '',
+                  r = d.getElementsByTagName('head')[0]
+                t.setAttribute('id', '_vis_opt_path_hides')
+                v && t.setAttribute('nonce', v.nonce)
+                t.setAttribute('type', 'text/css')
+                if (t.styleSheet) t.styleSheet.cssText = n
+                else t.appendChild(d.createTextNode(n))
+                r.appendChild(t)
+              } else {
+                t = d.getElementsByTagName('head')[0]
+                var n = d.createElement('div')
+                n.style.cssText =
+                  'z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;'
+                n.setAttribute('id', '_vis_opt_path_hides')
+                n.classList.add('_vis_hide_layer')
+                t.parentNode.insertBefore(n, t.nextSibling)
+              }
+              var o =
+                'https://dev.visualwebsiteoptimizer.com/j.php?a=' +
+                account_id +
+                '&u=' +
+                encodeURIComponent(d.URL) +
+                '&vn=' +
+                version
+              if (w.location.search.indexOf('_vwo_xhr') !== -1) {
+                this.addScript({ src: o })
+              } else {
+                this.load(o + '&x=true')
+              }
+            },
+          }
+          w._vwo_code = code
+          code.init()
+        })()
+    </script>
+    <!-- End VWO Async SmartCode -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/css/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/css/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/css/magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/css/style.min.css?1751435158"
+    />
+    <noscript
+      ><style>
+        .lazyload[data-src] {
+          display: none !important;
+        }
+      </style></noscript
+    ><style>
+      .lazyload {
+        background-image: none !important;
+      }
+      .lazyload:before {
+        background-image: none !important;
+      }
+    </style><style>
+      .wp-block-gallery.is-cropped .blocks-gallery-item picture {
+        height: 100%;
+        width: 100%;
+      }
+    </style><link
+      rel="icon"
+      href="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_32,h_32/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/cropped-original-32x32.webp"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_192,h_192/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/cropped-original-192x192.webp"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_180,h_180/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/cropped-original-180x180.webp"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/cropped-original-270x270.webp"
+    />
+
+    <!-- Google Tag Manager (noscript) -->
+    <script
+      data-type="lazy"
+      data-src="data:text/javascript;base64,CihmdW5jdGlvbih3LCBkLCBzLCBsLCBpKSB7Cgl3W2xdID0gd1tsXSB8fCBbXTsKCXdbbF0ucHVzaCh7CgknZ3RtLnN0YXJ0JzogbmV3IERhdGUoKS5nZXRUaW1lKCksCglldmVudDogJ2d0bS5qcycKCX0pOwoJdmFyIGYgPSBkLmdldEVsZW1lbnRzQnlUYWdOYW1lKHMpWzBdLAoJaiA9IGQuY3JlYXRlRWxlbWVudChzKSwKCWRsID0gbCAhPSAnZGF0YUxheWVyJyA/ICcmbD0nICsgbCA6ICcnOwoJai5hc3luYyA9IHRydWU7CglqLnNyYyA9CgknaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RtLmpzP2lkPScgKyBpICsgZGw7CglmLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGosIGYpOwp9KSh3aW5kb3csIGRvY3VtZW50LCAnc2NyaXB0JywgJ2RhdGFMYXllcicsICdHVE0tTkM4MjdOMycpOwo="
+    ></script>
+    <!-- End Google Tag Manager -->
   </head>
-  <body>
-    <div class={styles.wrapper}>
+
+  <body
+    class="page-template page-template-pages page-template-page-lp page-template-pagespage-lp-php page page-id-58 page-parent"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NC827N3"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="l-wrapper js-wrapper">
       <Header />
-      <main>
-        <slot />
-      </main>
+      <main class="l-main p-lp" role="main">
+        <section class="p-lp-mv pt-0 pb-0">
+          <img
+            width="1125"
+            height="1689"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGUAAAaZAQAAAADNXo+4AAAAAnRSTlMAAHaTzTgAAAD/SURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg1qQsAAfrpcvgAAAAASUVORK5CYII="
+            class="c-image--responsive lazyload"
+            alt="THE ARTMAKE TOKYO"
+            decoding="async"
+            loading="eager"
+            fetchpriority="high"
+            data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1125,h_1689/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV.webp"
+            data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1125/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV.webp 1125w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_200/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-200x300.webp 200w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_682/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-682x1024.webp 682w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_768/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-768x1153.webp 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1023/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-1023x1536.webp 1023w"
+            data-sizes="auto"
+            data-eio-rwidth="1125"
+            data-eio-rheight="1689"
+          />
+          <noscript
+            ><img
+              width="1125"
+              height="1689"
+              src="https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV.webp"
+              class="c-image--responsive"
+              alt="THE ARTMAKE TOKYO"
+              decoding="async"
+              loading="eager"
+              fetchpriority="high"
+              srcset="https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV.webp 1125w, https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-200x300.webp 200w, https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-682x1024.webp 682w, https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-768x1153.webp 768w, https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/MV-1023x1536.webp 1023w"
+              sizes="(max-width: 1125px) 100vw, 1125px"
+              data-eio="l"
+            />
+          </noscript>
+        </section>
+        <section class="p-lp-special-information">
+          <h2 class="c-heading c-heading--en">
+            <span class="underline">SPECIAL INFORMATION</span>
+          </h2>
+
+          <img
+            width="750"
+            height="609"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAJhAQAAAAA2gAhqAAAAAnRSTlMAAHaTzTgAAABPSURBVHja7cExAQAAAMKg9U9tCF+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuA+H/AAGdH6sEAAAAAElFTkSuQmCC"
+            class="c-image--responsive lazyload"
+            alt=""
+            decoding="async"
+            loading="lazy"
+            data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_609/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001.webp"
+            data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001-300x244.webp 300w"
+            data-sizes="auto"
+            data-eio-rwidth="750"
+            data-eio-rheight="609"
+          /><noscript
+            ><img
+              width="750"
+              height="609"
+              src="https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001.webp"
+              class="c-image--responsive"
+              alt=""
+              decoding="async"
+              loading="lazy"
+              srcset="https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001.webp 750w, https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/04/campaign_240701001-300x244.webp 300w"
+              sizes="auto, (max-width: 750px) 100vw, 750px"
+              data-eio="l"
+            /></noscript
+          >
+        </section>
+
+        <section class="p-lp-about" id="about">
+          <div class="p-lp-about__header p-lp-about__header--area">
+            <h2>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq4AAAIqAQAAAADNpfVlAAAAAnRSTlMAAHaTzTgAAABFSURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwZvEYAAbsMqLAAAAAASUVORK5CYII="
+                alt="質も価格もちょうどいいアートメイク、上質の選択。みんなが選んだ人気デザイン TOP3"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_686,h_554/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_title.webp"
+                decoding="async"
+                class="lazyload"
+                data-eio-rwidth="686"
+                data-eio-rheight="554"
+              /><noscript
+                ><img
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_title.webp"
+                  alt="質も価格もちょうどいいアートメイク、上質の選択。みんなが選んだ人気デザイン TOP3"
+                  data-eio="l"
+                /></noscript
+              >
+            </h2>
+          </div>
+
+          <ol class="p-lp-about__ranking js-ranking-slider">
+            <li class="p-lp-about__ranking-item">
+              <span class="medal">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_medal01.webp"
+                  alt="人気No.1"
+                />
+              </span>
+              <p class="image">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/img_ranking01.webp"
+                  alt="エアリーナチュラル眉"
+                />
+              </p>
+              <p class="title">エアリーナチュラル眉</p>
+              <ul class="tags">
+                <li>ふんわり毛並みのナチュラルデザイン</li>
+                <li>骨格や年代を問わない愛されデザイン</li>
+                <li>ゆるやかで柔らかい印象</li>
+              </ul>
+              <p class="point">POINT</p>
+              <p class="text">
+                ナチュラルでやりすぎ感のない美眉。骨格や色彩を考慮し、顔馴染みの良い仕上がりを実現します。
+              </p>
+            </li>
+            <li class="p-lp-about__ranking-item">
+              <span class="medal">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_medal02.webp"
+                  alt="人気No.2"
+                />
+              </span>
+              <p class="image">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/img_ranking02.webp"
+                  alt="キレイめフェミニン眉"
+                />
+              </p>
+              <p class="title">キレイめフェミニン眉</p>
+              <ul class="tags">
+                <li>お顔になじむ女性らしいデザイン</li>
+                <li>キレイめなファッションやメイクと相性◎</li>
+                <li>柔らかさと上品さの絶妙バランス</li>
+              </ul>
+              <p class="point">POINT</p>
+              <p class="text">
+                フェミニンな雰囲気と上品できれいめなスタイルが好きな方にオススメ。
+              </p>
+            </li>
+            <li class="p-lp-about__ranking-item">
+              <span class="medal">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_medal03.webp"
+                  alt="人気No.3"
+                />
+              </span>
+              <p class="image">
+                <img
+                  class="c-image--responsive"
+                  data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/img_ranking03.webp"
+                  alt="華やかエレガント眉"
+                />
+              </p>
+              <p class="title">華やかエレガント眉</p>
+              <ul class="tags">
+                <li>しごできなオトナの雰囲気が高まる</li>
+                <li>女優のような品格を感じるデザイン</li>
+                <li>特別なシーンでも映えるデザイン</li>
+              </ul>
+              <p class="point">POINT</p>
+              <p class="text">
+                甘さ控えめの華やかさと大人っぽい雰囲気。キリっとした目元を叶える女性らしいデザイン。
+              </p>
+            </li>
+          </ol>
+
+          <div class="p-lp-about__exprience">
+            <div class="p-lp-about__exprience-text">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgkAAACuAQAAAACUn6MqAAAAAnRSTlMAAHaTzTgAAAAiSURBVGje7cExAQAAAMKg9U9tBn+gAAAAAAAAAAAAAAD4DC2KAAH5khwYAAAAAElFTkSuQmCC"
+                alt="“上質なアートメイク体験” くつろげる空間で、経験豊富なアーティストがお出迎え"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_521,h_174/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_title02.webp"
+                decoding="async"
+                class="lazyload"
+                data-eio-rwidth="521"
+                data-eio-rheight="174"
+              /><noscript
+                ><img
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_title02.webp"
+                  alt="“上質なアートメイク体験” くつろげる空間で、経験豊富なアーティストがお出迎え"
+                  data-eio="l"
+                /></noscript
+              >
+            </div>
+            <div class="p-lp-about__exprience-movie">
+              <video autoplay muted loop playsinline>
+                <source
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/about/rank_movie.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+
+          <div class="p-lp__button-reserve">
+            <a
+              class="c-button c-button--reserve js-modal"
+              href="#modal-line"
+              data-effect="mfp-zoom-in"
+            >
+              <span
+                class="c-speech-bubble c-speech-bubble--white c-button--reserve__bubble"
+              >
+                <span class="c-speech-bubble__text"
+                  >お得なモニター予約もこちらから</span
+                >
+              </span>
+              <span class="c-button__text">空席カレンダー&予約する</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="p-lp-choice" id="choice">
+          <div class="p-lp-choice__image">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAEoAQAAAAAvP0lTAAAAAnRSTlMAAHaTzTgAAAAxSURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8G23YAAGKsmpZAAAAAElFTkSuQmCC"
+              alt="アートメイククリニック、どう選べばいいかわからない…"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_296/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_01.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="296"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_01.webp"
+                alt="アートメイククリニック、どう選べばいいかわからない…"
+                data-eio="l"
+              /></noscript
+            >
+          </div>
+          <div class="p-lp-choice__image">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAEfAQAAAAA2QH5GAAAAAnRSTlMAAHaTzTgAAAAxSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4MmqBAAHZya9hAAAAAElFTkSuQmCC"
+              alt="仕上がりを左右するのはゲストに寄り添う想いとそれを形にする「技術力とカウンセリング」"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_287/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_text.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="287"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_text.webp"
+                alt="仕上がりを左右するのはゲストに寄り添う想いとそれを形にする「技術力とカウンセリング」"
+                data-eio="l"
+              /></noscript
+            >
+          </div>
+          <div class="p-lp-choice__table-image_wrapper">
+            <div class="p-lp-choice__table-image">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABfIAAAL7AQAAAACe1EmqAAAAAnRSTlMAAHaTzTgAAACkSURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GY8XgAB2pZITgAAAABJRU5ErkJggg=="
+                alt="クリニック比較表：専門クリニック、美容クリニック、個人営業、韓国クリニックの違い"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1522,h_763/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_02.webp"
+                decoding="async"
+                class="lazyload"
+                data-eio-rwidth="1522"
+                data-eio-rheight="763"
+              /><noscript
+                ><img
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_02.webp"
+                  alt="クリニック比較表：専門クリニック、美容クリニック、個人営業、韓国クリニックの違い"
+                  data-eio="l"
+                /></noscript
+              >
+            </div>
+            <button
+              class="slick__next slick__arrow slick-arrow"
+              aria-label="右へスクロール"
+              type="button"
+              aria-disabled="false"></button>
+          </div>
+          <div class="p-lp-choice__image is_gradation">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAIvAQAAAAAD0mN2AAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlwbPcQAB1/wyLgAAAABJRU5ErkJggg=="
+              alt="症例数が多く専門性が高いアートメイク専門クリニックがおすすめ"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_559/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_text02.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="559"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/choice/choice_text02.webp"
+                alt="症例数が多く専門性が高いアートメイク専門クリニックがおすすめ"
+                data-eio="l"
+              /></noscript
+            >
+          </div>
+        </section>
+
+        <section class="p-lp-case" id="case">
+          <div class="p-lp-case__header">
+            <p class="c-heading c-heading--en">
+              <span class="underline">CASE</span>
+            </p>
+            <h2 class="c-heading">眉アートメイク症例</h2>
+          </div>
+
+          <ul class="c-case-list p-lp-case__list js-case-slider">
+            <li class="c-case-list__item">
+              <img
+                class="c-image--responsive"
+                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case01.webp"
+                alt=""
+              />
+            </li>
+            <li class="c-case-list__item">
+              <img
+                class="c-image--responsive"
+                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case02.webp"
+                alt=""
+              />
+            </li>
+            <li class="c-case-list__item">
+              <img
+                class="c-image--responsive"
+                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case03.webp"
+                alt=""
+              />
+            </li>
+          </ul>
+
+          <div class="p-lp__button-reserve">
+            <a
+              class="c-button c-button--reserve js-modal"
+              href="#modal-line"
+              data-effect="mfp-zoom-in"
+            >
+              <span
+                class="c-speech-bubble c-speech-bubble--white c-button--reserve__bubble"
+              >
+                <span class="c-speech-bubble__text"
+                  >お得なモニター予約もこちらから</span
+                >
+              </span>
+              <span class="c-button__text">空席カレンダー&予約する</span>
+            </a>
+          </div>
+        </section>
+
+        <p class="p-lp-commitment__clinic-image">
+          <img
+            class="c-image--responsive lazyload"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAF1AQAAAACfL1J6AAAAAnRSTlMAAHaTzTgAAAA5SURBVHja7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgZimsAAb/DzgsAAAAASUVORK5CYII="
+            alt="THE ARTMAKE TOKYO 福岡院 受付画像"
+            data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_373/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/img_clinic.webp"
+            decoding="async"
+            data-eio-rwidth="750"
+            data-eio-rheight="373"
+          /><noscript
+            ><img
+              class="c-image--responsive"
+              src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/img_clinic.webp"
+              alt="THE ARTMAKE TOKYO 福岡院 受付画像"
+              data-eio="l"
+            /></noscript
+          >
+        </p>
+
+        <section class="p-lp-commitment" id="commitment">
+          <h2 class="p-lp-commitment__header">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAHZAQAAAADx8YPvAAAAAnRSTlMAAHaTzTgAAABCSURBVHja7cGBAAAAAMOg+VNf4QBVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBtr4cAAbhTyuYAAAAASUVORK5CYII="
+              alt="採用率16％　上質で丁寧なアーティストが自慢です"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_473/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_text.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="473"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_text.webp"
+                alt="採用率16％　上質で丁寧なアーティストが自慢です"
+                data-eio="l"
+              /></noscript
+            >
+          </h2>
+
+          <p class="">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAGZAQAAAAD+qYmDAAAAAnRSTlMAAHaTzTgAAAA9SURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODWAJfHAAFyLreQAAAAAElFTkSuQmCC"
+              alt=""
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_409/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_01.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="409"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_01.webp"
+                alt=""
+                data-eio="l"
+              /></noscript
+            >
+          </p>
+          <p class="c-lead p-lp-commitment__text">
+            全国からの<strong>多数の応募者</strong>から、<br />
+            <strong>丁寧に、繊細に、美の本質を描く</strong><br />
+            アートメイクアーティストたちを採用
+          </p>
+          <p class="p-lp-commitment__chart">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAPhAQAAAACORxcGAAAAAnRSTlMAAHaTzTgAAABySURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgwcI4AAZTjmjkAAAAASUVORK5CYII="
+              alt="アーティストのこだわり：技術力・デザイン・カウンセリング"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_993/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_02.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="993"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_02.webp"
+                alt="アーティストのこだわり：技術力・デザイン・カウンセリング"
+                data-eio="l"
+              /></noscript
+            >
+          </p>
+
+          <p class="p-lp-commitment__features">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAHFAQAAAACF5UEPAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcGagbAAH78pxyAAAAAElFTkSuQmCC"
+              alt=""
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_453/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_03.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="453"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_03.webp"
+                alt=""
+                data-eio="l"
+              /></noscript
+            >
+          </p>
+
+          <p class="p-lp-commitment__statement">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAD/AQAAAACGc25wAAAAAnRSTlMAAHaTzTgAAAAtSURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBhXqEAAbev1LUAAAAASUVORK5CYII="
+              alt="唯一無二のアーティストとともに、あなたの理想の眉を形にします"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_255/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_text02.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="255"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/commitment/commitment_text02.webp"
+                alt="唯一無二のアーティストとともに、あなたの理想の眉を形にします"
+                data-eio="l"
+              /></noscript
+            >
+          </p>
+        </section>
+
+        <section class="p-lp-artist" id="artist">
+          <h2 class="c-heading c-heading--en">
+            <span class="underline">ARTIST</span>
+          </h2>
+          <p class="p-lp-artist__header">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq4AAACZAQAAAADGZIWXAAAAAnRSTlMAAHaTzTgAAAAkSURBVGje7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAgFMDM/8AAbsQ1tYAAAAASUVORK5CYII="
+              alt="アートメイクで理想の眉に。"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_686,h_153/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/artist/artist_title.webp"
+              decoding="async"
+              data-eio-rwidth="686"
+              data-eio-rheight="153"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/artist/artist_title.webp"
+                alt="アートメイクで理想の眉に。"
+                data-eio="l"
+              /></noscript
+            >
+          </p>
+          <p class="c-lead p-lp-artist__lead">
+            <strong>丁寧なアーティスト</strong>が繊細に<br />
+            <strong>あなたの理想</strong>に寄り添います。
+          </p>
+
+          <div class="p-lp-artist__slider-wrapper">
+            <ul class="p-lp-artist__list js-artist-slider">
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">YUKI <br />SHIBUKAWA</p>
+                      <p class="c-name">シブカワ ユーキ</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="172"
+                        height="177"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_172,h_177/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/03/dammy_shibukawa.png"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">すっぴんが好きになる美容施術</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/artist_case_slide_img_mai.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/artist_case_slide_img_mai.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/05/artist_case_slide_img_mai-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>有名人対応歴あり</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">MAI <br />TAKIZAWA</p>
+                      <p class="c-name">滝沢 まい</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_Mai.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    アートメイク×美肌治療の トータル美容アーティスト
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mai.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mai.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mai-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>眉下切開後の眉対応</li>
+                    <li>講師経験あり</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">NANAKA <br />KATAKURA</p>
+                      <p class="c-name">片倉 ななか</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_Nanaka.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">眉なしさんのためのアートメイク</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_nanaka.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_nanaka.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_nanaka-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>無毛症対応</li>
+                    <li>落ち着いた接客</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">KIYOKO <br />HOSODA</p>
+                      <p class="c-name">細田 聖子</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_kiyoko.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">大人のアートメイク</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kiyoko.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kiyoko.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kiyoko-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>有名人対応歴あり</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AI <br />WASHIMI</p>
+                      <p class="c-name">鷲見 愛</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_ai.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    “骨格×肌質に合った” 後悔しないアートメイク
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ai.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ai.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ai-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>40代～得意</li>
+                    <li>ママ世代から人気</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">MIWA</p>
+                      <p class="c-name">MIWA</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_miwa.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    "おかませで大正解" 口コミNo. 1の信頼と実績
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miwa.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miwa.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miwa-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>全年齢対応</li>
+                    <li>明るい接客</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">SUYON</p>
+                      <p class="c-name">スヨン</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_suyon.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">韓国と日本の美の融合、アートメイク革命</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_suyon.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_suyon.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_suyon-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>メンズ眉</li>
+                    <li>全年齢対応</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">YU-SUKE <br />SHIBAMORI</p>
+                      <p class="c-name">柴森 ユースケ</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_yu-suke.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">唇を 心を 人生を、華やかに</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yu-suke.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yu-suke.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yu-suke-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>20〜30代得意</li>
+                    <li>落ち着いた接客</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">RIHO <br />MATSUBAYASHI</p>
+                      <p class="c-name">松林 りほ</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_riho.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">美は自信 素材を活かしたナチュラル美眉</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_riho.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_riho.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_riho-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>20〜30代得意</li>
+                    <li>メンズ眉</li>
+                    <li>無毛症対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">MIYUKI <br />HASEGAWA</p>
+                      <p class="c-name">長谷川 美幸</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_miyuki.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    自眉の様なナチュラル感
+                    "眉の毛流れに宿る美しさ"を引き立てます
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miyuki.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miyuki.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_miyuki-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>20〜30代得意</li>
+                    <li>眉下切開後の眉対応</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">YUMI <br />TSUJIURA</p>
+                      <p class="c-name">辻占 ゆみ</p>
+                      <p class="c-clinic">横浜院/YOKOHAMA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_yumi.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">“私に溶け込む” アートメイク</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yumi.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yumi.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yumi-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>有名人対応歴あり</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">RIE <br />TANIDA</p>
+                      <p class="c-name">谷田 りえ</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_rie.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    あなたが描く理想像の終着点をワンランク上へ引き上げます
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rie.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rie.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rie-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>有名人対応歴あり</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">TOMOKA <br />MIZUNO</p>
+                      <p class="c-name">水野 ともか</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_tomoka.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    自然さを求めた"パーソナルデザイン"
+                    ヘルシーで抜け感のあるアートメイクを
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_tomoka.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_tomoka.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_tomoka-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>ママ世代から人気</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AKARI <br />MORI</p>
+                      <p class="c-name">森 あかり</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_akari.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    自分をもっと好きになる透明感のある柔らかな仕上がりのアートメイク
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akari.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akari.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akari-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>30代得意</li>
+                    <li>40代～得意</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">MIZUKI <br />DOU</p>
+                      <p class="c-name">堂 みずき</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_mizuki.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    あなたの可愛さを引き出す "大人girlyアートメイク"
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mizuki.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mizuki.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_mizuki-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>20〜30代得意</li>
+                    <li>メンズ眉</li>
+                    <li>有名人対応歴あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">YUU</p>
+                      <p class="c-name">YUU</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_yuu.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">エレガント感溢れる美眉をプロデュース</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yuu.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yuu.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_yuu-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>全年齢対応</li>
+                    <li>落ち着いた接客</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">KAHO</p>
+                      <p class="c-name">kaho</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_kaho.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    私自身が脱毛症当事者。だからこだわる" 自然な毛並み
+                    "アートメイク
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kaho.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kaho.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_kaho-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>明るい接客</li>
+                    <li>無毛症対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">ARISA <br />MATSUMOTO</p>
+                      <p class="c-name">松本 ありさ</p>
+                      <p class="c-clinic">大阪院/OSAKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_arisa.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    "細かな技術で美欲を満たす"あなたの美しさを引き上げます
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_arisa.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_arisa.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_arisa-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>ママ世代から人気</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AKIOKA</p>
+                      <p class="c-name">秋岡</p>
+                      <p class="c-clinic">名古屋院/NAGOYA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_akioka.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">後悔のないアートメイクを</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akioka.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akioka.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_akioka-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>メンズ眉</li>
+                    <li>全年齢対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AOZORA</p>
+                      <p class="c-name">あおぞら</p>
+                      <p class="c-clinic">名古屋院/NAGOYA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_aozora.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">アートメイクで素敵な日常が始まる</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aozora.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aozora.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aozora-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>カウンセリング重視</li>
+                    <li>全年齢対応</li>
+                    <li>落ち着いた接客</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">RINA <br />INOUE</p>
+                      <p class="c-name">井上 リナ</p>
+                      <p class="c-clinic">名古屋院/NAGOYA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_rina.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    自分を好きになる"オーダーメイド"アートメイク
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rina.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rina.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_rina-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>ママ世代から人気</li>
+                    <li>全年齢対応</li>
+                    <li>無毛症対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AYANO</p>
+                      <p class="c-name">アヤノ</p>
+                      <p class="c-clinic">福岡院/FUKUOKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_ayano.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">そっと触れたくなる。『眉と唇』作ります</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayano.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayano.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayano-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>40代～得意</li>
+                    <li>全年齢対応</li>
+                    <li>有名人対応歴あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AYA <br />SASAKI</p>
+                      <p class="c-name">佐々木 綾</p>
+                      <p class="c-clinic">福岡院/FUKUOKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_aya.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">「こんな眉毛にしたかった」を叶えます。</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aya.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aya.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_aya-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>全年齢対応</li>
+                    <li>落ち着いた接客</li>
+                    <li>講師経験あり</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AYAKA <br />AOKI</p>
+                      <p class="c-name">青木 あやか</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_img_ayaka.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    「眉から始まる、自分を好きになる毎日。」
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayaka.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayaka.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_case_slide_img_ayaka-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>ママ世代から人気</li>
+                    <li>メンズ眉</li>
+                    <li>全年齢対応</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">AKIE</p>
+                      <p class="c-name">Akie</p>
+                      <p class="c-clinic">福岡院/FUKUOKA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="750"
+                        height="718"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_718/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_artist_img_Akie.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                        srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_artist_img_Akie.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_artist_img_Akie-300x287.webp 300w"
+                        sizes="(max-width: 750px) 100vw, 750px"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">
+                    乳がん経験者だからこそ、大切にするすっぴんに馴染むアートメイク
+                  </p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_akie.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_akie.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_akie-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="p-lp-artist__item">
+                <div class="p-lp-artist__item-profile">
+                  <div class="is-flex">
+                    <div>
+                      <p class="c-name-romanization">SEINA<br />NAKASHIMA</p>
+                      <p class="c-name">中島 せいな</p>
+                      <p class="c-clinic">銀座院/GINZA</p>
+                    </div>
+                    <picture>
+                      <img
+                        width="258"
+                        height="264"
+                        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_258,h_264/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/artist_artist_img_seina.webp"
+                        class="attachment-full size-full"
+                        alt=""
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <p class="c-intro">アートメイクで、美の覚醒</p>
+                </div>
+                <div class="p-lp-artist__item-case">
+                  <picture>
+                    <img
+                      width="750"
+                      height="741"
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_741/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_seina.webp"
+                      class="attachment-full size-full"
+                      alt=""
+                      decoding="async"
+                      srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_seina.webp 750w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_300/https://tat1234.xsrv.jp/wp/wp-content/uploads/2025/06/img_case_seina-300x296.webp 300w"
+                      sizes="(max-width: 750px) 100vw, 750px"
+                    />
+                  </picture>
+                  <ul class="p-lp-artist__item-hashtag">
+                    <li>40代～得意</li>
+                    <li>落ち着いた接客</li>
+                    <li>過去歴対応</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="p-lp-artist__counter js-artist-counter">
+              <span class="current">1</span>／<span class="total">1</span>
+            </div>
+          </div>
+
+          <p class="p-lp__button-reserve">
+            <a
+              class="c-button c-button--white c-button--arrow"
+              href="https://tat1234.xsrv.jp/artist-list/"
+            >
+              <span class="c-button__text">アーティスト一覧はこちら</span>
+            </a>
+          </p>
+
+          <div class="p-lp__button-reserve">
+            <a
+              class="c-button c-button--reserve js-modal"
+              href="#modal-line"
+              data-effect="mfp-zoom-in"
+            >
+              <span
+                class="c-speech-bubble c-speech-bubble--white c-button--reserve__bubble"
+              >
+                <span class="c-speech-bubble__text"
+                  >お得なモニター予約もこちらから</span
+                >
+              </span>
+              <span class="c-button__text">空席カレンダー&予約する</span>
+            </a>
+          </div>
+        </section>
+        <section class="p-lp-doctor" id="doctor">
+          <h2 class="p-lp-doctor__header">
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAKwAQAAAADv4sfgAAAAAnRSTlMAAHaTzTgAAABWSURBVHja7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBj/UAABfKkdnAAAAABJRU5ErkJggg=="
+              alt="院長の想い：アートメイクの感動をもっと身近に、もっと安心に"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_688/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_title.png"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="688"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_title.png"
+                alt="院長の想い：アートメイクの感動をもっと身近に、もっと安心に"
+                data-eio="l"
+              /></noscript
+            >
+          </h2>
+
+          <div class="p-lp-doctor__message">
+            <h3 class="p-lp-doctor__message-title">MESSAGE</h3>
+            <p class="p-lp-doctor__message-body">
+              <strong>「上質なアートメイクを適正価格で提供したい」</strong><br
+              />
+              この想いでTHE ARTMAKE TOKYOを設立しました。<br />
+              有名アーティスト・レベルの高いアーティストの施術は、とかく高額になりがちです。<br
+              />
+              私たちは、<strong>「上質を、もっと身近に」</strong
+              >という信念のもと、効率性と丁寧で繊細なサービスを両立しています。
+              ただ整えるのではなく、<strong>心まで満たすアートメイク</strong
+              >を目指しています。
+            </p>
+          </div>
+
+          <div class="p-lp-doctor__achievements">
+            <h4 class="p-lp-doctor__achievements-title">主な実績</h4>
+            <ul class="p-lp-doctor__achievements-list">
+              <li>・第10回国際アートメイク学会 登壇</li>
+              <li>・日本美容皮膚科学会 学会誌</li>
+              <li>・専門医師向け医療アートメイクガイド 編著</li>
+            </ul>
+            <p class="p-lp-doctor__achievements-image">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAADbAQAAAABWtw5wAAAAAnRSTlMAAHaTzTgAAAAbSURBVFjD7cEBDQAAAMKg909tDwcUAAAAAIcGEfcAAS4KdwsAAAAASUVORK5CYII="
+                alt="医療アートメイクに関する書籍の表紙"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_153,h_219/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_01.webp"
+                decoding="async"
+                data-eio-rwidth="153"
+                data-eio-rheight="219"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_01.webp"
+                  alt="医療アートメイクに関する書籍の表紙"
+                  data-eio="l"
+                /></noscript
+              >
+            </p>
+          </div>
+
+          <div class="p-lp-doctor__clinic-image">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAGNAQAAAABm7skOAAAAAnRSTlMAAHaTzTgAAAA7SURBVHja7cExAQAAAMKg9U9tBn+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4DKTUwABJLTKSwAAAABJRU5ErkJggg=="
+              alt="THE ARTMAKE TOKYO院内写真"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_397/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_02.webp"
+              decoding="async"
+              class="lazyload"
+              data-eio-rwidth="750"
+              data-eio-rheight="397"
+            /><noscript
+              ><img
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/doctor/doctor_02.webp"
+                alt="THE ARTMAKE TOKYO院内写真"
+                data-eio="l"
+              /></noscript
+            >
+          </div>
+        </section>
+
+        <section class="p-lp-feature" id="feature">
+          <div class="p-lp__header">
+            <p class="c-heading c-heading--en">
+              <span class="underline">FEATURE</span>
+            </p>
+            <h2 class="c-heading">THE ARTMAKE TOKYOの特徴</h2>
+          </div>
+
+          <div class="p-lp-feature__block p-lp-feature__feather-brow">
+            <h3 class="p-lp-feature__header">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq4AAAEPAQAAAACrLHt9AAAAAnRSTlMAAHaTzTgAAAAuSURBVHja7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC7AVwZAAHqR9oQAAAAAElFTkSuQmCC"
+                alt="POINT1 オリジナル技術 フェザーブロウ"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_686,h_271/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_title.webp"
+                decoding="async"
+                data-eio-rwidth="686"
+                data-eio-rheight="271"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_title.webp"
+                  alt="POINT1 オリジナル技術 フェザーブロウ"
+                  data-eio="l"
+                /></noscript
+              >
+            </h3>
+
+            <p class="p-lp-feature__image is-style-rounded">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAAQ4AQAAAADEa1EiAAAAAnRSTlMAAHaTzTgAAAClSURBVHja7cExAQAAAMKg9U9tCU+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgaPd4AAbwPrc0AAAAASUVORK5CYII="
+                alt="例"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1080,h_1080/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_movie.gif"
+                decoding="async"
+                data-eio-rwidth="1080"
+                data-eio-rheight="1080"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_movie.gif"
+                  alt="例"
+                  data-eio="l"
+                /></noscript
+              >
+            </p>
+
+            <div class="p-lp-feature__compare">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq4AAABlAQAAAACkNFz1AAAAAnRSTlMAAHaTzTgAAAAfSURBVGje7cExAQAAAMKg9U/tbQegAAAAAAAAAADgDCJTAAEgUHxuAAAAAElFTkSuQmCC"
+                alt="軽やかで自然な立体感はまるで本物のような仕上がり"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_686,h_101/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_01.webp"
+                decoding="async"
+                data-eio-rwidth="686"
+                data-eio-rheight="101"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_01.webp"
+                  alt="軽やかで自然な立体感はまるで本物のような仕上がり"
+                  data-eio="l"
+                /></noscript
+              >
+              <p class="p-lp-feature__text">
+                <strong>ふんわりとした柔らかさ</strong>と<strong
+                  >リアルな毛流れ</strong
+                >を両立する、THE ARTMAKE TOKYO独自の技法。
+              </p>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAEHAQAAAAAByVq6AAAAAnRSTlMAAHaTzTgAAAAsSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAjg1VRQAB5tPcRwAAAABJRU5ErkJggg=="
+                alt="従来のアートメイクとフェザーブロウの比較：塗りつぶしと毛流れ再現の違い"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_650,h_263/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_02.webp"
+                decoding="async"
+                class="lazyload"
+                data-eio-rwidth="650"
+                data-eio-rheight="263"
+              /><noscript
+                ><img
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow01_02.webp"
+                  alt="従来のアートメイクとフェザーブロウの比較：塗りつぶしと毛流れ再現の違い"
+                  data-eio="l"
+                /></noscript
+              >
+            </div>
+          </div>
+
+          <div class="p-lp-feature__block p-lp-feature__counseling">
+            <h3 class="p-lp-feature__header">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAF1AQAAAABHI/ZwAAAAAnRSTlMAAHaTzTgAAAA0SURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnBnjvAAFClKV2AAAAAElFTkSuQmCC"
+                alt="POINT2 黄金比 × 好みで自然な眉に “理想を叶える” カウンセリング"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_650,h_373/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow02_title.webp"
+                decoding="async"
+                data-eio-rwidth="650"
+                data-eio-rheight="373"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow02_title.webp"
+                  alt="POINT2 黄金比 × 好みで自然な眉に “理想を叶える” カウンセリング"
+                  data-eio="l"
+                /></noscript
+              >
+            </h3>
+
+            <p class="p-lp-feature__text">
+              <strong>黄金比をベース</strong>に、<strong
+                >お好みに合わせて</strong
+              >顔全体のバランスを美しくデザイン。<strong
+                >丁寧なカウンセリング</strong
+              >で、理想の眉へ導きます。
+            </p>
+
+            <img
+              class="c-image--responsive lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAKdAQAAAABU0NEIAAAAAnRSTlMAAHaTzTgAAABUSURBVHja7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBi+EMAAQol5XgAAAAASUVORK5CYII="
+              alt="カウンセリングシートのイメージと選定項目一覧"
+              data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_669/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow02_01.webp"
+              decoding="async"
+              data-eio-rwidth="750"
+              data-eio-rheight="669"
+            /><noscript
+              ><img
+                class="c-image--responsive"
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow02_01.webp"
+                alt="カウンセリングシートのイメージと選定項目一覧"
+                data-eio="l"
+              /></noscript
+            >
+          </div>
+
+          <div class="p-lp-feature__block p-lp-feature__correction">
+            <h3 class="p-lp-feature__header">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAFvAQAAAADlbteNAAAAAnRSTlMAAHaTzTgAAAA0SURBVHja7cExAQAAAMKg9U/tbwagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgDHb9AAGEGrCTAAAAAElFTkSuQmCC"
+                alt="POINT3 思い通りの眉を実現 他院修正も対応できる技術力"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_650,h_367/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow03_title.webp"
+                decoding="async"
+                data-eio-rwidth="650"
+                data-eio-rheight="367"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow03_title.webp"
+                  alt="POINT3 思い通りの眉を実現 他院修正も対応できる技術力"
+                  data-eio="l"
+                /></noscript
+              >
+            </h3>
+
+            <p class="p-lp-feature__text">
+              <strong>過去のアートメイク修正も対応</strong>。<br />
+              他クリニックで思い通りにならなかった眉も、<strong
+                >除去から再施術まで高い技術力</strong
+              >でサポートします。
+            </p>
+
+            <p class="p-lp-feature__image is-bg-white">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAD9AQAAAAATt2txAAAAAnRSTlMAAHaTzTgAAAArSURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAA4GFIHAAGoBHzdAAAAAElFTkSuQmCC"
+                alt="ビフォーアフター画像：眉修正"
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_650,h_253/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow03_01.webp"
+                decoding="async"
+                class="lazyload"
+                data-eio-rwidth="650"
+                data-eio-rheight="253"
+              /><noscript
+                ><img
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/feature/airy-brow03_01.webp"
+                  alt="ビフォーアフター画像：眉修正"
+                  data-eio="l"
+                /></noscript
+              ><br />
+              <a
+                class="c-button c-button--white c-button--arrow"
+                href="https://tat1234.xsrv.jp/removal/"
+              >
+                <span class="c-button__text">詳細はこちら</span>
+              </a>
+            </p>
+          </div>
+        </section><section class="p-lp-price" id="price">
+          <div class="p-lp-price__header">
+            <p class="c-heading c-heading--en">
+              <span class="underline">PRICE</span>
+            </p>
+            <h2 class="c-heading">料金表</h2>
+          </div>
+
+          <p class="c-center">
+            <a
+              href="https://tat1234.xsrv.jp/price/"
+              class="c-button c-button--arrow c-button--grey"
+              ><span class="c-button__text">全メニューの料金一覧はこちら</span
+              ></a
+            >
+          </p>
+        </section>
+
+        <section class="p-lp-reason" id="reason">
+          <div class="p-lp__header p-lp-reason__header">
+            <p class="c-heading c-heading--en">
+              <span class="underline">REASON</span>
+            </p>
+            <h2 class="c-heading">
+              <span>THE ARTMAKE TOKYOが</span><br />
+              <span
+                ><strong>選ばれる<span class="c-num">4</span>つの理由</strong
+                ></span
+              >
+            </h2>
+          </div>
+
+          <ul class="p-lp-reason__list">
+            <li class="p-lp-reason__item">
+              <p class="p-lp-reason__img">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
+                  alt=""
+                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_01.webp"
+                  decoding="async"
+                  class="lazyload"
+                  data-eio-rwidth="690"
+                  data-eio-rheight="488"
+                /><noscript
+                  ><img
+                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_01.webp"
+                    alt=""
+                    data-eio="l"
+                  /></noscript
+                >
+              </p>
+              <div class="p-lp-reason__text-wrap">
+                <h3>70,000症例数<sup>※</sup></h3>
+                <p class="p-lp-reason__text">
+                  全国規模で展開、症例数70,000例の実績があり、雑誌やメディアなどにも多数掲載され、芸能人やモデルなど著名人の方からの支持もいただいています。
+                </p>
+                <p class="c-note">※2020年9月～2025年4月</p>
+              </div>
+            </li>
+            <li class="p-lp-reason__item">
+              <p class="p-lp-reason__img">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
+                  alt=""
+                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_02.webp"
+                  decoding="async"
+                  class="lazyload"
+                  data-eio-rwidth="690"
+                  data-eio-rheight="488"
+                /><noscript
+                  ><img
+                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_02.webp"
+                    alt=""
+                    data-eio="l"
+                  /></noscript
+                >
+              </p>
+              <div class="p-lp-reason__text-wrap">
+                <h3>麻酔で痛くない！</h3>
+                <p class="p-lp-reason__text">
+                  オプション料金なしで肌に塗るタイプの麻酔を使用し、お痛みをしっかりやわらげた状態で施術をいたします。
+                </p>
+              </div>
+            </li>
+            <li class="p-lp-reason__item">
+              <p class="p-lp-reason__img">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
+                  alt=""
+                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03.webp"
+                  decoding="async"
+                  class="lazyload"
+                  data-eio-rwidth="690"
+                  data-eio-rheight="488"
+                /><noscript
+                  ><img
+                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03.webp"
+                    alt=""
+                    data-eio="l"
+                  /></noscript
+                >
+              </p>
+              <div class="p-lp-reason__text-wrap">
+                <h3>レーザー除去保証</h3>
+                <p class="p-lp-reason__text">
+                  アートメイク・レーザー除去を低価格で受けられる保証です。施術部位の除去レーザーを両眉1回9,800円で受けられます。<br
+                  />
+                  （両眉通常価格：49,600円）
+                </p>
+                <p class="c-note">
+                  ※医師を指名の場合のみ、指名料が発生いたします。カウンセリングのみでご予約いただいた場合も指名料は発生いたします。
+                </p>
+                <p class="c-center">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjoAAADyAQAAAABsF1KdAAAAAnRSTlMAAHaTzTgAAAAoSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAABeBkUCAAHOYHGzAAAAAElFTkSuQmCC"
+                    alt="太く不自然な毛を除去"
+                    class="c-image--responsive lazyload"
+                    data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_570,h_242/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03_2.webp"
+                    decoding="async"
+                    data-eio-rwidth="570"
+                    data-eio-rheight="242"
+                  /><noscript
+                    ><img
+                      src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03_2.webp"
+                      alt="太く不自然な毛を除去"
+                      class="c-image--responsive"
+                      data-eio="l"
+                    /></noscript
+                  >
+                </p>
+                <p class="c-note">
+                  ※除去できるまでに必要な回数には個人差があります。
+                </p>
+              </div>
+            </li>
+            <li class="p-lp-reason__item">
+              <p class="p-lp-reason__img">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
+                  alt=""
+                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_04.webp"
+                  decoding="async"
+                  class="lazyload"
+                  data-eio-rwidth="690"
+                  data-eio-rheight="488"
+                /><noscript
+                  ><img
+                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_04.webp"
+                    alt=""
+                    data-eio="l"
+                  /></noscript
+                >
+              </p>
+              <div class="p-lp-reason__text-wrap">
+                <h3>リッチタイムプランもご用意</h3>
+                <p class="p-lp-reason__text">
+                  ゆっくり時間が欲しい方向け、あなたの理想をとことん追求。アーティストとデザインや仕上がりについてじっくり相談したい方におすすめのプランです。
+                </p>
+                <p class="c-center">
+                  <a
+                    href="https://tat1234.xsrv.jp/richtimep/"
+                    class="c-button c-button--arrow c-button--light"
+                    ><span class="c-button__text">詳細はこちら</span></a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul><section class="p-lp-steps" id="steps">
+            <div class="p-lp-__header p-lp-steps__header">
+              <p class="c-heading c-heading--en">
+                <span class="underline">STEP</span>
+              </p>
+              <h2 class="c-heading">施術当日の流れ</h2>
+            </div>
+
+            <ol class="p-lp-steps__list js-steps-slider">
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>01</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps01.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">カウンセリング</p>
+                <p class="text">
+                  カウンセリングシートに、お体のこと（既往歴など）を伺ったのち、施行を担当するアーティスト（看護師）がカウンセリングをさせていただきます。<br
+                  />施術に関するご希望やご不安、疑問など、些細なことでもお気持ちをぜひお聞かせください。
+                </p>
+              </li>
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>02</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps02.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">
+                  眉のバランスチェック &<br />似合わせデザイン
+                </p>
+                <p class="text">
+                  カウンセリングで伺った理想としている眉に基づき、似合わせデザインを行っていきます。似合わせデザインとは、骨格や目・眉の距離、眉毛の長さなどから導き出す「黄金比率」となりたいイメージの両方の良いところをブレンドしたハイブリット方法です。
+                </p>
+              </li>
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>03</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps03.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">医師による診察</p>
+                <p class="text">
+                  医師による診察を受けていただきます。<br
+                  />眉や眉回りの皮膚の状態を診察し、安全にアートメイクを行っていただけるかを確認していきます。
+                </p>
+              </li>
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>04</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps04.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">塗る麻酔</p>
+                <p class="text">
+                  施術部位に塗る麻酔を塗布し、お痛みをカバーします。
+                </p>
+              </li>
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>05</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps05.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">施術</p>
+                <p class="text">
+                  アートメイク専用のニードルで施術します。<br
+                  />看護師資格を持つ厳選されたスタッフのみが施術を行います。
+                </p>
+              </li>
+              <li class="p-lp-steps__list-item">
+                <p class="number"><span>06</span></p>
+                <p class="image">
+                  <img
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/steps/img_steps06.webp"
+                    alt=""
+                  />
+                </p>
+                <p class="title">アフターカウンセリング</p>
+                <p class="text">
+                  施術後の注意点をご説明します。<br
+                  />2回目以降の施術は、施術後28日以上間隔をあけてご予約ください。
+                </p>
+              </li>
+            </ol>
+
+            <div class="p-lp__button-reserve">
+              <a
+                class="c-button c-button--reserve js-modal"
+                href="#modal-line"
+                data-effect="mfp-zoom-in"
+              >
+                <span
+                  class="c-speech-bubble c-speech-bubble--white c-button--reserve__bubble"
+                >
+                  <span class="c-speech-bubble__text"
+                    >お得なモニター予約もこちらから</span
+                  >
+                </span>
+                <span class="c-button__text">空席カレンダー&予約する</span>
+              </a>
+            </div>
+          </section>
+          <section class="p-lp-clinic-locations">
+            <h2 class="c-heading c-heading--en">
+              <span class="underline">CLINIC LOCATIONS</span>
+            </h2>
+            <p class="p-lp-clinic-locations__image">
+              <img
+                class="c-image--responsive lazyload"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAQnAQAAAACMUdQhAAAAAnRSTlMAAHaTzTgAAAB5SURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICbAYqIAAGYRF63AAAAAElFTkSuQmCC"
+                alt=""
+                data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_750,h_1063/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic-locations/img_location.webp"
+                decoding="async"
+                data-eio-rwidth="750"
+                data-eio-rheight="1063"
+              /><noscript
+                ><img
+                  class="c-image--responsive"
+                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic-locations/img_location.webp"
+                  alt=""
+                  data-eio="l"
+                /></noscript
+              >
+            </p>
+          </section>
+
+          <section class="p-lp-clinic" id="clinic">
+            <div class="p-lp-clinic__wrapper">
+              <p class="c-heading c-heading--en">
+                <span class="underline">CLINIC</span>
+              </p>
+              <h2 class="c-heading">クリニック情報</h2>
+
+              <ul class="p-lp-clinic__list js-clinic-slider">
+                <li class="p-lp-clinic__list-item">
+                  <img
+                    class="c-image--responsive"
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic/img_clinic01.webp"
+                    alt=""
+                  />
+                </li>
+                <li class="p-lp-clinic__list-item">
+                  <img
+                    class="c-image--responsive"
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic/img_clinic02.webp"
+                    alt=""
+                  />
+                </li>
+                <li class="p-lp-clinic__list-item">
+                  <img
+                    class="c-image--responsive"
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic/img_clinic03.webp"
+                    alt=""
+                  />
+                </li>
+                <li class="p-lp-clinic__list-item">
+                  <img
+                    class="c-image--responsive"
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic/img_clinic04.webp"
+                    alt=""
+                  />
+                </li>
+                <li class="p-lp-clinic__list-item">
+                  <img
+                    class="c-image--responsive"
+                    data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/clinic/img_clinic05.webp"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="p-lp-clinic__description">※銀座院の写真です</p>
+            </div>
+          </section>
+          <section class="p-lp-access" id="access">
+            <div class="p-lp-access__header">
+              <p class="c-heading c-heading--en">
+                <span class="underline">ACCESS</span>
+              </p>
+              <h2 class="c-heading">アクセス</h2>
+            </div>
+
+            <div class="p-lp-access__accordion js-accordion">
+              <h3 class="accordion-header js-accordion__header">
+                <span class="label">銀座院</span><span class="icon"></span>
+              </h3>
+              <div class="accordion-body js-accordion__body">
+                <div class="p-lp-access__map">
+                  <p>
+                    <iframe
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.329276592765!2d139.76846300000003!3d35.674975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4557c82ad7%3A0xd0bb6c4af31a6538!2zVEhFIEFSVE1BS0UgVE9LWU8g6YqA5bqn!5e0!3m2!1sja!2sus!4v1714636665074!5m2!1sja!2sus"
+                      class="lazyload"></iframe>
+                  </p>
+                </div>
+                <ul class="p-lp-access__info">
+                  <li class="clinic"><span>THE ARTMAKE TOKYO 銀座院</span></li>
+                  <li class="address">
+                    <h4>住所</h4><span
+                      >東京都中央区銀座１丁目２−４<br />
+                      サクセス銀座ファースト7階</span
+                    >
+                  </li>
+                  <li class="access">
+                    <h4>アクセス</h4><span
+                      >銀座一丁目駅 ７番出口（徒歩1分）<br />
+                      京橋駅 3番出口（徒歩1分）<br />
+                      JR有楽町駅 京橋口（徒歩6分）</span
+                    >
+                  </li>
+                  <li class="tel">
+                    <h4>電話番号</h4><span>050-1807-2572</span>
+                  </li>
+                  <li class="hour"><span>営業時間：10:00～19:00</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-lp-access__accordion js-accordion">
+              <h3 class="accordion-header js-accordion__header">
+                <span class="label">大阪院</span><span class="icon"></span>
+              </h3>
+              <div class="accordion-body js-accordion__body">
+                <div class="p-lp-access__map">
+                  <p>
+                    <iframe
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13119.7492566482!2d135.49928700000004!3d34.706761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e746722661d9%3A0x5465811dcac5755f!2zVEhFIEFSVE1BS0UgVE9LWU8g5aSn6Ziq6Zmi!5e0!3m2!1sja!2sjp!4v1714636758790!5m2!1sja!2sjp"
+                      class="lazyload"></iframe>
+                  </p>
+                </div>
+                <ul class="p-lp-access__info">
+                  <li class="clinic"><span>THE ARTMAKE TOKYO 大阪院</span></li>
+                  <li class="address">
+                    <h4>住所</h4><span
+                      >大阪府大阪市北区曾根崎新地１-4-12<br />
+                      桜橋プラザビル B1F</span
+                    >
+                  </li>
+                  <li class="access">
+                    <h4>アクセス</h4><span
+                      >JR大阪駅 桜橋出口 徒歩5分<br />
+                      JR東西線北新地駅 西出口 徒歩1分<br />
+                      (11-5番出口すぐ)<br />
+                      地下鉄四つ橋線西梅田駅 徒歩2分<br />
+                      (8番出口方面C-60左手階段すぐ)</span
+                    >
+                  </li>
+                  <li class="tel">
+                    <h4>電話番号</h4><span>050-1807-2572</span>
+                  </li>
+                  <li class="hour"><span>営業時間：10:00〜19:00</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-lp-access__accordion js-accordion">
+              <h3 class="accordion-header js-accordion__header">
+                <span class="label">名古屋院</span><span class="icon"></span>
+              </h3>
+              <div class="accordion-body js-accordion__body">
+                <div class="p-lp-access__map">
+                  <p>
+                    <iframe
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.575178293242!2d136.88661349999998!3d35.1672142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600371323397f99f%3A0x9041a6b15205dc30!2zVEhFIEFSVE1BS0UgVE9LWU8g5ZCN5Y-k5bGL6Zmi772c44K444O744Ki44O844OI44Oh44Kk44Kv5p2x5Lqs44O75ZCN5Y-k5bGL6Zmi!5e0!3m2!1sja!2sjp!4v1751250515255!5m2!1sja!2sjp"
+                      class="lazyload"></iframe>
+                  </p>
+                </div>
+                <ul class="p-lp-access__info">
+                  <li class="clinic">
+                    <span>THE ARTMAKE TOKYO 名古屋院</span>
+                  </li>
+                  <li class="address">
+                    <h4>住所</h4><span
+                      >愛知県名古屋市中村区名駅南1丁目24−8<br />
+                      原ビル 2階</span
+                    >
+                  </li>
+                  <li class="access">
+                    <h4>アクセス</h4><span
+                      >・各線 名古屋駅
+                      8番出口より地下へ入る⇨地下街サンロード6番出口徒歩2分<br />
+                      ・各線 名古屋駅 JR 中央改札口から徒歩15分<br />
+                      ・各線 名古屋駅 地下鉄（東山線・桜通線）：南改札口から徒歩10分</span
+                    >
+                  </li>
+                  <li class="tel">
+                    <h4>電話番号</h4><span>050-1807-2572</span>
+                  </li>
+                  <li class="hour">
+                    <span>営業時間：10:00～19:00（予約制）</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-lp-access__accordion js-accordion">
+              <h3 class="accordion-header js-accordion__header">
+                <span class="label">横浜院</span><span class="icon"></span>
+              </h3>
+              <div class="accordion-body js-accordion__body">
+                <div class="p-lp-access__map">
+                  <p>
+                    <iframe
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12998.096406236495!2d139.6265709!3d35.4665745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185d687d768e5d%3A0x3fc2a668e17161b9!2zVEhFIEFSVE1BS0UgVE9LWU_mqKrmtZzpmaLvvZzjgrjjg7vjgqLjg7zjg4jjg6HjgqTjgq_mnbHkuqwg5qiq5rWc6Zmi!5e0!3m2!1sja!2sjp!4v1727766536603!5m2!1sja!2sjp"
+                      class="lazyload"></iframe>
+                  </p>
+                </div>
+                <ul class="p-lp-access__info">
+                  <li class="clinic"><span>THE ARTMAKE TOKYO 横浜院</span></li>
+                  <li class="address">
+                    <h4>住所</h4><span
+                      >神奈川県横浜市神奈川区金港町1-10<br />
+                      横浜ベイクォータ5F</span
+                    >
+                  </li>
+                  <li class="access">
+                    <h4>アクセス</h4><span>横浜駅きた東口より徒歩5分</span>
+                  </li>
+                  <li class="hour">
+                    <span
+                      >営業時間：<br />
+                      月・火・水・木　11:00〜19:00<br />
+                      日　11:00〜18:00<br />
+                      <br />
+                      定休日：金・土</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-lp-access__accordion js-accordion">
+              <h3 class="accordion-header js-accordion__header">
+                <span class="label">福岡院</span><span class="icon"></span>
+              </h3>
+              <div class="accordion-body js-accordion__body">
+                <div class="p-lp-access__map">
+                  <p>
+                    <iframe
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13294.583757853452!2d130.3962828!3d33.588541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419198bc67e20f%3A0xc260345642bbc6b8!2zVEhFIEFSVE1BS0UgVE9LWU_npo_lsqHpmaLvvZzjgrjjg7vjgqLjg7zjg4jjg6HjgqTjgq_mnbHkuqwg56aP5bKh6Zmi!5e0!3m2!1sja!2sjp!4v1728968487673!5m2!1sja!2sjp"
+                      class="lazyload"></iframe>
+                  </p>
+                </div>
+                <ul class="p-lp-access__info">
+                  <li class="clinic"><span>THE ARTMAKE TOKYO 福岡院</span></li>
+                  <li class="address">
+                    <h4>住所</h4><span
+                      >福岡県福岡市中央区大名1丁目12−60<br />
+                      FPGリンクス大名Ⅱ 4F</span
+                    >
+                  </li>
+                  <li class="access">
+                    <h4>アクセス</h4><span
+                      >西鉄天神大牟田線 西鉄福岡駅 天神 ソラリア口 （徒歩5分）<br
+                      />
+                      福岡市営空港線 天神駅 3番口 （徒歩5分）<br />
+                      福岡市営空港線 赤坂駅 5番口 （徒歩6分）</span
+                    >
+                  </li>
+                  <li class="tel">
+                    <h4>電話番号</h4><span>050-1807-2572</span>
+                  </li>
+                  <li class="hour">
+                    <span
+                      >営業時間：10:00～19:00<br />
+                      定休日：月・木</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="p-lp-qa" id="qa">
+            <div class="p-lp-qa__header">
+              <p class="c-heading c-heading--en">
+                <span class="underline">Q&A</span>
+              </p>
+              <h2 class="c-heading">よくある質問</h2>
+            </div>
+
+            <ol class="p-lp-qa__list">
+              <li class="p-lp-qa__accordion js-accordion">
+                <div class="accordion-header js-accordion__header">
+                  <span class="q-number">Q1.</span>
+                  <p class="question">眉のアートメイク後は腫れますか？</p>
+                </div>
+                <div class="accordion-body js-accordion__body">
+                  <span class="a-number">A1.</span>
+                  <p class="answer">
+                    施術当日は、個人差はありますが軽度の赤みや腫れが出現することがあります。<br
+                    />
+                    出現しても、入浴後の火照り程度の赤みの場合がほとんどです。<br
+                    />
+                    心配の場合は、メガネやサングラスなどをご持参いただくと安心です。<br
+                    />
+                    また、個人差はありますが施術翌日にまぶたにむくみが生じることがあります。
+                  </p>
+                </div>
+              </li>
+              <li class="p-lp-qa__accordion js-accordion">
+                <div class="accordion-header js-accordion__header">
+                  <span class="q-number">Q2.</span>
+                  <p class="question">
+                    眉のアートメイク当日は、眉はすっぴんで行く必要がありますか？
+                  </p>
+                </div>
+                <div class="accordion-body js-accordion__body">
+                  <span class="a-number">A2.</span>
+                  <p class="answer">
+                    普段の眉メイクをした状態でお越しください。<br />
+                    アーティストとのカウンセリングの際に、色味や形の参考にさせていただきます。
+                  </p>
+                </div>
+              </li>
+              <li class="p-lp-qa__accordion js-accordion">
+                <div class="accordion-header js-accordion__header">
+                  <span class="q-number">Q3.</span>
+                  <p class="question">
+                    眉のアートメイクをするために、眉毛を全部剃って行った方がいいですか？
+                  </p>
+                </div>
+                <div class="accordion-body js-accordion__body">
+                  <span class="a-number">A3.</span>
+                  <p class="answer">
+                    自毛を生かしたデザインを行うため、普段のお手入れ程度の眉の状態でお越しください。<br
+                    />
+                    眉を全て剃ってしまうと、自毛を生かしたデザインを行えないため、全部剃ることはしないでください。
+                  </p>
+                </div>
+              </li>
+              <li class="p-lp-qa__accordion js-accordion">
+                <div class="accordion-header js-accordion__header">
+                  <span class="q-number">Q4.</span>
+                  <p class="question">施術当日シャワーや入浴はできますか？</p>
+                </div>
+                <div class="accordion-body js-accordion__body">
+                  <span class="a-number">A4.</span>
+                  <p class="answer">
+                    施術当日は施術部位はシャワーおよび洗髪を避けていただきます。<br
+                    />
+                    施術24時間後から洗髪可能ですが、優しくすすいでください。<br
+                    />
+                    汗をかくと色落ちや感染の原因となるため、バスタブに長時間浸かるような入浴は1週間お控えください。
+                  </p>
+                </div>
+              </li>
+              <li class="p-lp-qa__accordion js-accordion">
+                <div class="accordion-header js-accordion__header">
+                  <span class="q-number">Q5.</span>
+                  <p class="question">どのくらい持続しますか？</p>
+                </div>
+                <div class="accordion-body js-accordion__body">
+                  <span class="a-number">A5.</span>
+                  <p class="answer">
+                    通常半年～2年かけて徐々に薄くなっていきます。<br />
+                    ライフスタイルや代謝などにより定着、持続期間は異なります。<br
+                    />
+                    半年～2年を目安にリタッチをしていただくと綺麗な状態が保てるのでお勧めしています。
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="p-lp-qa__button">
+              <a
+                class="c-button c-button--arrow c-button--light"
+                href="https://tat1234.xsrv.jp/faq/"
+                target="_blank"
+              >
+                <span class="c-button__text">もっと見る</span>
+              </a>
+            </div>
+          </section>
+          <div class="c-float-reserve u-sp-tb">
+            <a
+              class="c-float-reserve__link js-modal c-float-reserve__link--line"
+              href="#modal-line"
+              data-effect="mfp-zoom-in"
+            >
+              <span
+                class="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble"
+              >
+                <span class="c-speech-bubble__text">お得なモニター募集中！</span
+                >
+              </span>
+              <span class="c-float-reserve__title"
+                >空席カレンダー&<br class="u-sp" />予約する</span
+              >
+            </a>
+
+            <a
+              class="c-float-reserve__link c-float-reserve__link--tel js-modal"
+              href="#modal-tel"
+              data-effect="mfp-zoom-in"
+            >
+              <span
+                class="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble"
+              >
+                <span class="c-speech-bubble__text"
+                  >空きがあればすぐご案内♩</span
+                >
+              </span>
+              <span class="c-float-reserve__title"
+                >当日予約<br /><small>10時〜17時受付中</small></span
+              >
+            </a>
+          </div>
+
+          <div class="c-modal-reserve mfp-with-anim mfp-hide" id="modal-line">
+            <span class="c-modal-reserve__close js-modal-close"></span>
+            <div class="c-modal-reserve__inner">
+              <h2 class="c-modal-reserve__heading"><span>LINE予約</span></h2>
+              <p class="c-modal-reserve__lead">
+                ご希望のクリニックをお選びください
+              </p>
+
+              <ul class="c-modal-reserve__link">
+                <li>
+                  <a
+                    class="c-button c-button--arrow c-button--square"
+                    href="https://lin.ee/4cEZ71z"
+                    target="_blank"
+                  >
+                    <span class="c-button__text">銀座院</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="c-button c-button--arrow c-button--square"
+                    href="https://lin.ee/tSN9Mmf2"
+                    target="_blank"
+                  >
+                    <span class="c-button__text">大阪院</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="c-button c-button--arrow c-button--square"
+                    href="https://lin.ee/svbnHnP"
+                    target="_blank"
+                  >
+                    <span class="c-button__text">名古屋院</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="c-button c-button--arrow c-button--square"
+                    href="https://lin.ee/JvIV8zO"
+                    target="_blank"
+                  >
+                    <span class="c-button__text">横浜院</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="c-button c-button--arrow c-button--square"
+                    href="https://s.lmes.jp/landing-qr/2007366799-VGg6qYeD?uLand=v66K5n"
+                    target="_blank"
+                  >
+                    <span class="c-button__text">福岡院</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="c-modal-reserve mfp-with-anim mfp-hide" id="modal-tel">
+            <span class="c-modal-reserve__close js-modal-close"></span>
+            <div class="c-modal-reserve__inner">
+              <h2 class="c-modal-reserve__heading">
+                <span>当日電話予約</span>
+              </h2>
+              <p class="c-modal-reserve__text">
+                当日予約はお電話がスムーズです♩<br />
+                (受付時間：10時〜17時)
+              </p>
+
+              <p class="c-modal-reserve__lead">
+                <strong>ご希望のクリニックをお選びください</strong>
+              </p>
+
+              <ul class="c-modal-reserve__link">
+                <li>
+                  <a class="c-button c-button--square" href="tel:05018072572">
+                    <span class="c-button__text">銀座院</span>
+                    <small>タップして電話する</small>
+                  </a>
+                </li>
+                <li>
+                  <a class="c-button c-button--square" href="tel:05018072572">
+                    <span class="c-button__text">大阪院</span>
+                    <small>タップして電話する</small>
+                  </a>
+                </li>
+                <li>
+                  <a class="c-button c-button--square" href="tel:05018072572">
+                    <span class="c-button__text">名古屋院</span>
+                    <small>タップして電話する</small>
+                  </a>
+                </li>
+                <li>
+                  <a class="c-button c-button--square" href="tel:05018072572">
+                    <span class="c-button__text">福岡院</span>
+                    <small>タップして電話する</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="l-aside u-pc">
+            <div class="l-aside__inner">
+              <div class="c-aside-reserve">
+                <p
+                  class="c-speech-bubble c-speech-bubble--gray c-speech-bubble--square c-aside-reserve__bubble"
+                >
+                  <span class="c-speech-bubble__text"
+                    >お得なモニター割引実施中</span
+                  >
+                </p>
+                <h2 class="c-aside-reserve__heading">
+                  空席カレンダー・ご予約はこちら
+                </h2>
+                <p class="c-aside-reserve__lead">
+                  ご希望のクリニックをお選びください
+                </p>
+
+                <ul class="c-aside-reserve__link">
+                  <li class="c-aside-reserve__item">
+                    <p class="c-aside-reserve__item-name">銀座院</p>
+                    <a
+                      class="c-button c-button--square"
+                      href="https://lin.ee/4cEZ71z"
+                      target="_blank"
+                    >
+                      <span class="c-button__text">予約する</span>
+                    </a>
+                    <p class="c-aside-reserve__item-tel">
+                      当日予約<br /><a class="number" href="tel:05018072572"
+                        >050-1807-2572</a
+                      >
+                    </p>
+                  </li>
+                  <li class="c-aside-reserve__item">
+                    <p class="c-aside-reserve__item-name">大阪院</p>
+                    <a
+                      class="c-button c-button--square"
+                      href="https://lin.ee/tSN9Mmf2"
+                      target="_blank"
+                    >
+                      <span class="c-button__text">予約する</span>
+                    </a>
+                    <p class="c-aside-reserve__item-tel">
+                      当日予約<br /><a class="number" href="tel:05018072572"
+                        >050-1807-2572</a
+                      >
+                    </p>
+                  </li>
+                  <li class="c-aside-reserve__item">
+                    <p class="c-aside-reserve__item-name">名古屋院</p>
+                    <a
+                      class="c-button c-button--square"
+                      href="https://lin.ee/svbnHnP"
+                      target="_blank"
+                    >
+                      <span class="c-button__text">予約する</span>
+                    </a>
+                    <p class="c-aside-reserve__item-tel">
+                      当日予約<br /><a class="number" href="tel:05018072572"
+                        >050-1807-2572</a
+                      >
+                    </p>
+                  </li>
+                  <li class="c-aside-reserve__item">
+                    <p class="c-aside-reserve__item-name">横浜院</p>
+                    <a
+                      class="c-button c-button--square"
+                      href="https://lin.ee/JvIV8zO"
+                      target="_blank"
+                    >
+                      <span class="c-button__text">予約する</span>
+                    </a>
+                  </li>
+                  <li class="c-aside-reserve__item">
+                    <p class="c-aside-reserve__item-name">福岡院</p>
+                    <a
+                      class="c-button c-button--square"
+                      href="https://s.lmes.jp/landing-qr/2007366799-VGg6qYeD?uLand=v66K5n"
+                      target="_blank"
+                    >
+                      <span class="c-button__text">予約する</span>
+                    </a>
+                    <p class="c-aside-reserve__item-tel">
+                      当日予約<br /><a class="number" href="tel:05018072572"
+                        >050-1807-2572</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <Footer />
+      </main><!-- /.l-wrapper -->
+
+      <script type="text/javascript" id="eio-lazy-load-js-before">
+        /* <![CDATA[ */
+        var eio_lazy_vars = {
+          exactdn_domain: '',
+          skip_autoscale: 0,
+          threshold: 0,
+          use_dpr: 1,
+        }
+        /* ]]> */
+      </script>
+      <script
+        type="text/javascript"
+        src="https://tat1234.xsrv.jp/wp/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js"
+        id="eio-lazy-load-js"
+        async="async"
+        data-wp-strategy="async"></script>
+      <script
+        type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        id="jquery-js"></script>
+      <script
+        type="text/javascript"
+        src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/js/slick.min.js"
+        id="slick-js"></script>
+      <script
+        type="text/javascript"
+        src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/js/jquery.magnific-popup.min.js"
+        id="magnific-popup-js"></script>
+      <script
+        type="text/javascript"
+        src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/js/app.min.js?1750076336"
+        id="main-scripts-js"></script>
+      <script type="text/javascript" id="flying-scripts">
+        const loadScriptsTimer = setTimeout(loadScripts, 10 * 1000)
+        const userInteractionEvents = [
+          'click',
+          'mousemove',
+          'keydown',
+          'touchstart',
+          'touchmove',
+          'wheel',
+        ]
+        userInteractionEvents.forEach(function (event) {
+          window.addEventListener(event, triggerScriptLoader, { passive: !0 })
+        })
+        function triggerScriptLoader() {
+          loadScripts()
+          clearTimeout(loadScriptsTimer)
+          userInteractionEvents.forEach(function (event) {
+            window.removeEventListener(event, triggerScriptLoader, {
+              passive: !0,
+            })
+          })
+        }
+        function loadScripts() {
+          document
+            .querySelectorAll("script[data-type='lazy']")
+            .forEach(function (elem) {
+              elem.setAttribute('src', elem.getAttribute('data-src'))
+            })
+        }
+      </script>
     </div>
   </body>
 </html>
