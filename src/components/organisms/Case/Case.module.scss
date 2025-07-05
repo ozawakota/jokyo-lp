@@ -1,0 +1,162 @@
+.p-lp-case {
+  background-color: #EFE7D799;
+  padding-bottom: 0px;
+}
+
+.c-heading {
+  text-align: center;
+  margin-bottom: 40px;
+
+  img {
+    width: 140px;
+    margin-inline: auto;
+  }
+
+  span {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.c-case-list {
+  background-color: #EFE7D799;
+}
+
+.p-lp-case__contents {
+  padding-inline: 15px;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.p-lp-case__sns {
+  margin-block: 40px;
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  line-height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid #927C5C;
+  text-decoration: none;
+  align-items: center;
+  width: min(100%, 320px);
+  margin: 0 auto;
+
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    @include icon_insta()
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #927C5C;
+  }
+}
+
+.p-lp-case__more {
+  .text {
+    text-align: center;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 15px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 8px;
+        width: 105%;
+        background-color: #E4D4BD;
+        bottom: 0;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+  }
+
+  .list {
+    margin-bottom: 10px;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+
+      +li {
+        margin-top: 15px;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        top: 12px;
+        left: 4px;
+        background-color: #927C5C;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+
+        span {
+          color: #555555;
+          line-height: 160%;
+          font-size: 14px;
+          font-weight: 600;
+          position: relative;
+          display: inline-block;
+          z-index: 1;
+          line-height: 1;
+          padding-bottom: 1px;
+          display: inline;
+          background: linear-gradient(transparent 95%, #555555 0%);
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #927C5C;
+            border-right: 2px solid #927C5C;
+            transform: rotate(45deg);
+            margin-left: 20px;
+            position: absolute;
+            bottom: 6px;
+            right: -11px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .c-right {
+    text-align: right;
+  }
+
+  .link {
+    font-size: 14px;
+    color: #927C5C;
+  }
+}

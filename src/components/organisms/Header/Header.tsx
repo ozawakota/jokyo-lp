@@ -85,11 +85,11 @@ export const Header: React.FC<Props> = ({ className }) => {
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 width="20"
                 alt="Instagram"
-                data-src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_insta.svg"
+                data-src="/assets/images/common/icon_sns_insta.svg"
                 decoding="async"
                 className="lazyload"
               /><noscript><img
-                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_insta.svg"
+                src="/assets/images/common/icon_sns_insta.svg"
                 width="20"
                 alt="Instagram"
                 data-eio="l"
@@ -106,13 +106,13 @@ export const Header: React.FC<Props> = ({ className }) => {
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 width="17"
                 alt="tiktok"
-                data-src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_tiktok.svg"
+                data-src="/assets/images/common/icon_sns_tiktok.svg"
                 decoding="async"
                 className="lazyload"
               />
               <noscript>
                 <img
-                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_tiktok.svg"
+                  src="/assets/images/common/icon_sns_tiktok.svg"
                   width="17"
                   alt="tiktok"
                   data-eio="l"

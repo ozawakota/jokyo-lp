@@ -3,6 +3,7 @@ import { Header } from '~/components/organisms/Header'
 import { Footer } from '~/components/organisms/Footer'
 import { Question } from '~/components/organisms/Question'
 import { Access } from '~/components/organisms/Access'
+import { Case } from '~/components/organisms/Case'
 import { About } from '~/components/organisms/About'
 import { Point } from '~/components/organisms/Point'
 import { Price } from '~/components/organisms/Price'
@@ -284,55 +285,7 @@ import imgQR from '~/assets/images/img-QR.png'
           </div>
         </section>
 
-        <section class="p-lp-case" id="case">
-          <div class="p-lp-case__header">
-            <p class="c-heading c-heading--en">
-              <span class="underline">CASE</span>
-            </p>
-            <h2 class="c-heading">眉アートメイク症例</h2>
-          </div>
-
-          <ul class="c-case-list p-lp-case__list js-case-slider">
-            <li class="c-case-list__item">
-              <img
-                class="c-image--responsive"
-                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case01.webp"
-                alt=""
-              />
-            </li>
-            <li class="c-case-list__item">
-              <img
-                class="c-image--responsive"
-                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case02.webp"
-                alt=""
-              />
-            </li>
-            <li class="c-case-list__item">
-              <img
-                class="c-image--responsive"
-                data-lazy="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/case/img_case03.webp"
-                alt=""
-              />
-            </li>
-          </ul>
-
-          <div class="p-lp__button-reserve">
-            <a
-              class="c-button c-button--reserve js-modal"
-              href="#modal-line"
-              data-effect="mfp-zoom-in"
-            >
-              <span
-                class="c-speech-bubble c-speech-bubble--white c-button--reserve__bubble"
-              >
-                <span class="c-speech-bubble__text"
-                  >お得なモニター予約もこちらから</span
-                >
-              </span>
-              <span class="c-button__text">空席カレンダー&予約する</span>
-            </a>
-          </div>
-        </section>
+        <Case />
 
         <About />
 
