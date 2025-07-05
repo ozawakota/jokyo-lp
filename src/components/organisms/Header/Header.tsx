@@ -58,7 +58,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 
         <div className="l-header__menu-heading u-pc"><span>MENU</span></div>
         <ul className="l-header__list">
-          <li><a href="#example">眉アートメイク除去症例</a></li>
+          <li><a href="#case">眉アートメイク除去症例</a></li>
           <li><a href="#about">西川式除去とは？</a></li>
           <li><a href="#point">西川式除去のポイント</a></li>
           <li><a href="#price">料金表</a></li>
