@@ -47,6 +47,7 @@ export default defineConfig({
     // HTMLの圧縮を有効化
     inlineStylesheets: 'auto',
   },
+  outDir: './docs',
   // 追加の圧縮設定
   compressHTML: true,
 })
