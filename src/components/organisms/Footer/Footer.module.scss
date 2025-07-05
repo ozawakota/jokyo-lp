@@ -1,0 +1,30 @@
+.l-footer__submenu {
+  padding-bottom: 100px;
+
+  li {
+    text-align: center;
+
+    a {
+      color: white;
+      font-size: 11px;
+    }
+  }
+}
+
+.c-float-reserve {
+  background-color: #B09A7A;
+  position: fixed;
+  bottom: 0;
+  width: min(100%, 450px);
+  z-index: 10;
+
+  @media screen and (max-width: 559px) {
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    height: 70px;
+
+  }
+}
