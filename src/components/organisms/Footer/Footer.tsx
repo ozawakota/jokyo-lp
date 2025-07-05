@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Footer.module.scss'
 
 import clsx from 'clsx'
@@ -9,6 +9,20 @@ export interface Props {
 }
 
 export const Footer: React.FC<Props> = ({ className }) => {
+  const [lineUrl, setLineUrl] = useState('https://lin.ee/mDOfD9v')
+
+  useEffect(() => {
+    // クライアントサイドでURLパラメータをチェック
+    const urlParams = new URLSearchParams(window.location.search)
+    const media = urlParams.get('media')
+
+    if (media === 'gs') {
+      setLineUrl('https://lin.ee/HmoE4ZS')
+    } else {
+      setLineUrl('https://lin.ee/mDOfD9v')
+    }
+  }, [])
+
   return (
     <footer className="l-footer">
       <div className="c-to-top js-to-top">
@@ -75,7 +89,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
       </ul>
 
       <div className={clsx(styles['c-float-reserve'])}>
-        <a className="c-float-reserve__link c-float-reserve__link--line" href="#modal-line" data-link>
+        <a className="c-float-reserve__link c-float-reserve__link--line" href={lineUrl} data-link>
           <span className="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble">
             <span className="c-speech-bubble__text">お得なモニター募集中！</span>
           </span>
