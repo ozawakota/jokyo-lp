@@ -11,7 +11,7 @@ export const Header: React.FC<Props> = ({ className }) => {
   return (
     <header className="l-header js-header">
       <p className="l-header__logo">
-        <a href="https://tat1234.xsrv.jp/">
+        <a href="https://www.the-artmake-tokyo.tokyo/">
           <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             width="184"

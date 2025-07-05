@@ -1,3 +1,18 @@
+// .l-header__list {
+//   li {
+//     a {
+//       letter-spacing: .05em;
+//     }
+//   }
+// }
+:global(.l-header__list) {
+  li {
+    a {
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
 .l-header__more {
   background-color: #F4F4F4;
   padding-bottom: 110px;

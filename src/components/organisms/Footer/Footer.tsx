@@ -18,6 +18,8 @@ export const Footer: React.FC<Props> = ({ className }) => {
 
     if (media === 'gs') {
       setLineUrl('https://lin.ee/HmoE4ZS')
+    } else if ((media === 'insta')) {
+      setLineUrl('https://lin.ee/YvaS1lyC')
     } else {
       setLineUrl('https://lin.ee/mDOfD9v')
     }
@@ -62,19 +64,19 @@ export const Footer: React.FC<Props> = ({ className }) => {
 
       <ul className="l-footer__clinic-list">
         <li>
-          <a href="https://tat1234.xsrv.jp/brow/ginza">銀座院</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/brow/ginza">銀座院</a>
         </li>
         <li>
-          <a href="https://tat1234.xsrv.jp/brow/osaka">大阪院</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/brow/osaka">大阪院</a>
         </li>
         <li>
-          <a href="https://tat1234.xsrv.jp/brow/nagoya">名古屋院</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/brow/nagoya">名古屋院</a>
         </li>
         <li>
-          <a href="https://tat1234.xsrv.jp/brow/yokohama">横浜院</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/brow/yokohama">横浜院</a>
         </li>
         <li>
-          <a href="https://tat1234.xsrv.jp/brow/fukuoka">福岡院</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/brow/fukuoka">福岡院</a>
         </li>
       </ul>
 
@@ -84,7 +86,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
 
       <ul className={clsx(styles['l-footer__submenu'])}>
         <li className="l-footer__submenu-item">
-          <a href="https://tat1234.xsrv.jp/p_policy/" target="_blank">プライバシーポリシー</a>
+          <a href="https://www.the-artmake-tokyo.tokyo/p_policy/" target="_blank">プライバシーポリシー</a>
         </li>
       </ul>
 
