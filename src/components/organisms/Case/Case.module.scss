@@ -18,14 +18,43 @@
   }
 }
 
-.c-case-list {
-  background-color: #EFE7D799;
+
+:global(.c-case-list) {
+  background: #EFE7D799;
+  padding-top: 0;
+}
+
+:global(.c-case-list .slick-dots) {
+  bottom: 2.5em;
+}
+
+:global(.c-case-list .slick__arrow) {
+  bottom: 1.8em;
+}
+
+.c-case-list__item {
+  padding: 15px 15px 0;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background-color: white;
+
+  img {
+    width: stretch;
+  }
+
+  p {
+    text-align: center;
+    line-height: 120%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
 }
 
 .p-lp-case__contents {
   padding-inline: 15px;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 10px;
+  background: #EFE7D799;
+
 }
 
 .p-lp-case__sns {

@@ -16,13 +16,13 @@ export const Header: React.FC<Props> = ({ className }) => {
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             width="184"
             alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
-            data-src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/logo_tat.svg"
+            data-src="/assets/images/common/logo_tat.svg"
             decoding="async"
             className="lazyload"
           />
           <noscript>
             <img
-              src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/logo_tat.svg"
+              src="/assets/images/common/logo_tat.svg"
               width="184"
               alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
               data-eio="l"
@@ -39,13 +39,13 @@ export const Header: React.FC<Props> = ({ className }) => {
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             width="145"
             alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
-            data-src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/logo_tat.svg"
+            data-src="/assets/images/common/logo_tat.svg"
             decoding="async"
             className="lazyload"
           />
           <noscript>
             <img
-              src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/logo_tat.svg"
+              src="/assets/images/common/logo_tat.svg"
               width="145"
               alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
               data-eio="l"
