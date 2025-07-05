@@ -62,7 +62,7 @@ export const Header: React.FC<Props> = ({ className }) => {
           <li><a href="#about">西川式除去とは？</a></li>
           <li><a href="#point">西川式除去のポイント</a></li>
           <li><a href="#price">料金表</a></li>
-          <li><a href="#flow">施術当日の流れ</a></li>
+          <li><a href="#steps">施術当日の流れ</a></li>
           <li><a href="#access">アクセス</a></li>
           <li><a href="#qa">よくある質問</a></li>
         </ul>
