@@ -26,8 +26,27 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src'),
       },
     },
+    build: {
+      // JavaScriptの圧縮設定
+      minify: 'esbuild',
+      // CSS圧縮を有効化
+      cssMinify: true,
+      // チャンクサイズの設定
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            // vendor チャンクを分離
+            vendor: ['react', 'react-dom'],
+          },
+        },
+      },
+    },
   },
   build: {
     assets: '_assets',
-  }
+    // HTMLの圧縮を有効化
+    inlineStylesheets: 'auto',
+  },
+  // 追加の圧縮設定
+  compressHTML: true,
 })
