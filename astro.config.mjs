@@ -50,7 +50,7 @@ export default defineConfig({
       },
     },
   },
-  outDir: './dist/removal',
+  outDir: './docs/removal',
   // 追加の圧縮設定
   compressHTML: true,
 })
