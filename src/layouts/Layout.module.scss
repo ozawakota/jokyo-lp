@@ -1,0 +1,31 @@
+.c-aside-reserve {
+  background-color: white;
+  border-radius: 20px 0px 20px 0px;
+  padding: 53px 38px 48px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  width: min(100%, 275px);
+
+  .c-reserve__label {
+    color: #927C5C;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .c-speech-bubble__text {
+    font-size: 14px;
+  }
+
+  .c-aside-reserve__heading {
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #444444;
+  }
+
+  .logoImage {
+    width: 140px;
+    margin-top: 10px;
+  }
+}

@@ -4,7 +4,11 @@ import { Footer } from '~/components/organisms/Footer'
 
 // スタイル共通設定
 // スタイルモジュールのインポート
+import clsx from 'clsx'
 import styles from './Layout.module.scss'
+
+import imgQR from '~/assets/images/img-QR.png'
+
 ---
 
 <!doctype html>
@@ -2645,132 +2649,30 @@ import styles from './Layout.module.scss'
               </a>
             </div>
           </section>
-          <div class="c-float-reserve u-sp-tb">
-            <a
-              class="c-float-reserve__link js-modal c-float-reserve__link--line"
-              href="#modal-line"
-              data-effect="mfp-zoom-in"
-            >
-              <span
-                class="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble"
-              >
-                <span class="c-speech-bubble__text">お得なモニター募集中！</span
-                >
-              </span>
-              <span class="c-float-reserve__title"
-                >空席カレンダー&<br class="u-sp" />予約する</span
-              >
-            </a>
-
-            <a
-              class="c-float-reserve__link c-float-reserve__link--tel js-modal"
-              href="#modal-tel"
-              data-effect="mfp-zoom-in"
-            >
-              <span
-                class="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble"
-              >
-                <span class="c-speech-bubble__text"
-                  >空きがあればすぐご案内♩</span
-                >
-              </span>
-              <span class="c-float-reserve__title"
-                >当日予約<br /><small>10時〜17時受付中</small></span
-              >
-            </a>
-          </div>
-
-
 
           <aside class="l-aside u-pc">
             <div class="l-aside__inner">
-              <div class="c-aside-reserve">
+              <div class={clsx(styles['c-aside-reserve'])}>
+                <p class={clsx(styles['c-reserve__label'])}>
+                  RESERVATION
+                </p>
                 <p
                   class="c-speech-bubble c-speech-bubble--gray c-speech-bubble--square c-aside-reserve__bubble"
                 >
-                  <span class="c-speech-bubble__text"
-                    >お得なモニター割引実施中</span
+                  <span class={clsx(styles['c-speech-bubble__text'])}>お得なモニター割引実施中</span
                   >
                 </p>
-                <h2 class="c-aside-reserve__heading">
-                  空席カレンダー・ご予約はこちら
+                <h2 class={clsx(styles['c-aside-reserve__heading'])}>
+                  空席カレンダー・<br>ご予約はこちら
                 </h2>
-                <p class="c-aside-reserve__lead">
-                  ご希望のクリニックをお選びください
-                </p>
 
-                <ul class="c-aside-reserve__link">
-                  <li class="c-aside-reserve__item">
-                    <p class="c-aside-reserve__item-name">銀座院</p>
-                    <a
-                      class="c-button c-button--square"
-                      href="https://lin.ee/4cEZ71z"
-                      target="_blank"
-                    >
-                      <span class="c-button__text">予約する</span>
-                    </a>
-                    <p class="c-aside-reserve__item-tel">
-                      当日予約<br /><a class="number" href="tel:05018072572"
-                        >050-1807-2572</a
-                      >
-                    </p>
-                  </li>
-                  <li class="c-aside-reserve__item">
-                    <p class="c-aside-reserve__item-name">大阪院</p>
-                    <a
-                      class="c-button c-button--square"
-                      href="https://lin.ee/tSN9Mmf2"
-                      target="_blank"
-                    >
-                      <span class="c-button__text">予約する</span>
-                    </a>
-                    <p class="c-aside-reserve__item-tel">
-                      当日予約<br /><a class="number" href="tel:05018072572"
-                        >050-1807-2572</a
-                      >
-                    </p>
-                  </li>
-                  <li class="c-aside-reserve__item">
-                    <p class="c-aside-reserve__item-name">名古屋院</p>
-                    <a
-                      class="c-button c-button--square"
-                      href="https://lin.ee/svbnHnP"
-                      target="_blank"
-                    >
-                      <span class="c-button__text">予約する</span>
-                    </a>
-                    <p class="c-aside-reserve__item-tel">
-                      当日予約<br /><a class="number" href="tel:05018072572"
-                        >050-1807-2572</a
-                      >
-                    </p>
-                  </li>
-                  <li class="c-aside-reserve__item">
-                    <p class="c-aside-reserve__item-name">横浜院</p>
-                    <a
-                      class="c-button c-button--square"
-                      href="https://lin.ee/JvIV8zO"
-                      target="_blank"
-                    >
-                      <span class="c-button__text">予約する</span>
-                    </a>
-                  </li>
-                  <li class="c-aside-reserve__item">
-                    <p class="c-aside-reserve__item-name">福岡院</p>
-                    <a
-                      class="c-button c-button--square"
-                      href="https://s.lmes.jp/landing-qr/2007366799-VGg6qYeD?uLand=v66K5n"
-                      target="_blank"
-                    >
-                      <span class="c-button__text">予約する</span>
-                    </a>
-                    <p class="c-aside-reserve__item-tel">
-                      当日予約<br /><a class="number" href="tel:05018072572"
-                        >050-1807-2572</a
-                      >
-                    </p>
-                  </li>
-                </ul>
+                <img
+                src={imgQR.src}
+                alt="QR"
+                class={styles.logoImage}
+              />
+  
+
               </div>
             </div>
           </aside>
