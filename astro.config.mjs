@@ -10,6 +10,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
+  base: '/removal/',
+
+  // アセットファイルを相対パスにする設定
+  build: {
+    assets: 'assets',
+    assetsPrefix: './',
+  },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -42,12 +50,7 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    assets: '_assets',
-    // HTMLの圧縮を有効化
-    inlineStylesheets: 'auto',
-  },
-  outDir: './docs',
+  outDir: './dist/removal',
   // 追加の圧縮設定
   compressHTML: true,
 })

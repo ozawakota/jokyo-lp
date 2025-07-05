@@ -14,7 +14,7 @@ export const Price: React.FC = () => {
       </div>
 
       <p className="c-center">
-        <img src="/assets/images/lp/price/price-img.webp" alt="" srcset="" />
+        <img src="./assets/images/lp/price/price-img.webp" alt="" srcset="" />
       </p>
     </section>
 

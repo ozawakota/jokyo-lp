@@ -16,13 +16,13 @@ export const Header: React.FC<Props> = ({ className }) => {
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             width="184"
             alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
-            data-src="/assets/images/common/logo_tat.svg"
+            data-src="./assets/images/common/logo_tat.svg"
             decoding="async"
             className="lazyload"
           />
           <noscript>
             <img
-              src="/assets/images/common/logo_tat.svg"
+              src="./assets/images/common/logo_tat.svg"
               width="184"
               alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
               data-eio="l"
@@ -39,13 +39,13 @@ export const Header: React.FC<Props> = ({ className }) => {
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             width="145"
             alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
-            data-src="/assets/images/common/logo_tat.svg"
+            data-src="./assets/images/common/logo_tat.svg"
             decoding="async"
             className="lazyload"
           />
           <noscript>
             <img
-              src="/assets/images/common/logo_tat.svg"
+              src="./assets/images/common/logo_tat.svg"
               width="145"
               alt="THE ARTMAKE TOKYO（ジ・アートメイク東京）"
               data-eio="l"
@@ -85,7 +85,7 @@ export const Header: React.FC<Props> = ({ className }) => {
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 width="20"
                 alt="Instagram"
-                data-src="/assets/images/common/icon_sns_insta.svg"
+                data-src="./assets/images/common/icon_sns_insta.svg"
                 decoding="async"
                 className="lazyload"
               /><noscript><img
@@ -106,13 +106,13 @@ export const Header: React.FC<Props> = ({ className }) => {
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 width="17"
                 alt="tiktok"
-                data-src="/assets/images/common/icon_sns_tiktok.svg"
+                data-src="./assets/images/common/icon_sns_tiktok.svg"
                 decoding="async"
                 className="lazyload"
               />
               <noscript>
                 <img
-                  src="/assets/images/common/icon_sns_tiktok.svg"
+                  src="./assets/images/common/icon_sns_tiktok.svg"
                   width="17"
                   alt="tiktok"
                   data-eio="l"

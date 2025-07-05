@@ -18,7 +18,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>01</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps01.webp"
+              data-lazy="./assets/images/lp/steps/img_steps01.webp"
               alt=""
             />
           </p>
@@ -32,7 +32,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>02</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps02.webp"
+              data-lazy="./assets/images/lp/steps/img_steps02.webp"
               alt=""
             />
           </p>
@@ -47,7 +47,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>03</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps03.webp"
+              data-lazy="./assets/images/lp/steps/img_steps03.webp"
               alt=""
             />
           </p>
@@ -60,7 +60,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>04</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps04.webp"
+              data-lazy="./assets/images/lp/steps/img_steps04.webp"
               alt=""
             />
           </p>
@@ -73,7 +73,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>05</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps05.webp"
+              data-lazy="./assets/images/lp/steps/img_steps05.webp"
               alt=""
             />
           </p>
@@ -88,7 +88,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>06</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps06.webp"
+              data-lazy="./assets/images/lp/steps/img_steps06.webp"
               alt=""
             />
           </p>
@@ -101,7 +101,7 @@ export const Steps: React.FC = () => {
           <p className="number"><span>07</span></p>
           <p className="image">
             <img
-              data-lazy="/assets/images/lp/steps/img_steps07.webp"
+              data-lazy="./assets/images/lp/steps/img_steps07.webp"
               alt=""
             />
           </p>

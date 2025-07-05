@@ -11,7 +11,7 @@ export const Case: React.FC = () => {
           <span className="underline">CASE</span>
         </p>
         <h2 className={clsx(styles['c-heading'])}>
-          <img src="/assets/images/lp/case/case-head.webp" alt="" />
+          <img src="./assets/images/lp/case/case-head.webp" alt="" />
           <span>眉アートメイク除去症例</span>
         </h2>
       </div>
@@ -20,7 +20,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case01.webp"
+            data-lazy="./assets/images/lp/case/img_case01.webp"
             alt=""
           />
           <p>
@@ -31,7 +31,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case02.webp"
+            data-lazy="./assets/images/lp/case/img_case02.webp"
             alt=""
           />
           <p>
@@ -43,7 +43,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case03.webp"
+            data-lazy="./assets/images/lp/case/img_case03.webp"
             alt=""
           />
           <p>
@@ -55,7 +55,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case04.webp"
+            data-lazy="./assets/images/lp/case/img_case04.webp"
             alt=""
           />
           <p>
@@ -68,7 +68,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case05.webp"
+            data-lazy="./assets/images/lp/case/img_case05.webp"
             alt=""
           />
           <p>
@@ -81,7 +81,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case06.webp"
+            data-lazy="./assets/images/lp/case/img_case06.webp"
             alt=""
           />
           <p>
@@ -94,7 +94,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case07.webp"
+            data-lazy="./assets/images/lp/case/img_case07.webp"
             alt=""
           />
           <p>
@@ -107,7 +107,7 @@ export const Case: React.FC = () => {
         <li className={clsx(styles['c-case-list__item'])}>
           <img
             className="c-image--responsive"
-            data-lazy="/assets/images/lp/case/img_case08.webp"
+            data-lazy="./assets/images/lp/case/img_case08.webp"
             alt=""
           />
           <p>
@@ -120,7 +120,7 @@ export const Case: React.FC = () => {
       </ul>
 
       <div className={clsx(styles['p-lp-case__contents'])}>
-        <img src="/assets/images/lp/case/case-img1.webp" alt="" />
+        <img src="./assets/images/lp/case/case-img1.webp" alt="" />
         <div className={clsx(styles['p-lp-case__sns'])}>
           <a href="https://www.instagram.com/artmake_removal/" className={clsx(styles['instagram'])}>
             <span>公式Instagramを見る</span>
@@ -156,7 +156,7 @@ export const Case: React.FC = () => {
       </div>
 
       <div>
-        <img src="/assets/images/lp/case/case-img2.webp" alt="" />
+        <img src="./assets/images/lp/case/case-img2.webp" alt="" />
       </div>
 
     </section>
