@@ -3,6 +3,7 @@ import { Header } from '~/components/organisms/Header'
 import { Footer } from '~/components/organisms/Footer'
 import { Question } from '~/components/organisms/Question'
 import { Access } from '~/components/organisms/Access'
+import { Price } from '~/components/organisms/Price'
 import { Steps } from '~/components/organisms/Steps'
 
 // スタイル共通設定
@@ -1987,200 +1988,35 @@ import imgQR from '~/assets/images/img-QR.png'
               </a>
             </p>
           </div>
-        </section><section class="p-lp-price" id="price">
-          <div class="p-lp-price__header">
-            <p class="c-heading c-heading--en">
-              <span class="underline">PRICE</span>
-            </p>
-            <h2 class="c-heading">料金表</h2>
-          </div>
-
-          <p class="c-center">
-            <a
-              href="https://tat1234.xsrv.jp/price/"
-              class="c-button c-button--arrow c-button--grey"
-              ><span class="c-button__text">全メニューの料金一覧はこちら</span
-              ></a
-            >
-          </p>
         </section>
+        <Price />
 
-        <section class="p-lp-reason" id="reason">
-          <div class="p-lp__header p-lp-reason__header">
-            <p class="c-heading c-heading--en">
-              <span class="underline">REASON</span>
-            </p>
-            <h2 class="c-heading">
-              <span>THE ARTMAKE TOKYOが</span><br />
-              <span
-                ><strong>選ばれる<span class="c-num">4</span>つの理由</strong
-                ></span
+
+        <Steps />
+
+        <Access />
+        <Question />
+
+        <aside class="l-aside u-pc">
+          <div class="l-aside__inner">
+            <div class={clsx(styles['c-aside-reserve'])}>
+              <p class={clsx(styles['c-reserve__label'])}>RESERVATION</p>
+              <p
+                class="c-speech-bubble c-speech-bubble--gray c-speech-bubble--square c-aside-reserve__bubble"
               >
-            </h2>
-          </div>
-
-          <ul class="p-lp-reason__list">
-            <li class="p-lp-reason__item">
-              <p class="p-lp-reason__img">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
-                  alt=""
-                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_01.webp"
-                  decoding="async"
-                  class="lazyload"
-                  data-eio-rwidth="690"
-                  data-eio-rheight="488"
-                /><noscript
-                  ><img
-                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_01.webp"
-                    alt=""
-                    data-eio="l"
-                  /></noscript
+                <span class={clsx(styles['c-speech-bubble__text'])}
+                  >お得なモニター割引実施中</span
                 >
               </p>
-              <div class="p-lp-reason__text-wrap">
-                <h3>70,000症例数<sup>※</sup></h3>
-                <p class="p-lp-reason__text">
-                  全国規模で展開、症例数70,000例の実績があり、雑誌やメディアなどにも多数掲載され、芸能人やモデルなど著名人の方からの支持もいただいています。
-                </p>
-                <p class="c-note">※2020年9月～2025年4月</p>
-              </div>
-            </li>
-            <li class="p-lp-reason__item">
-              <p class="p-lp-reason__img">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
-                  alt=""
-                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_02.webp"
-                  decoding="async"
-                  class="lazyload"
-                  data-eio-rwidth="690"
-                  data-eio-rheight="488"
-                /><noscript
-                  ><img
-                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_02.webp"
-                    alt=""
-                    data-eio="l"
-                  /></noscript
-                >
-              </p>
-              <div class="p-lp-reason__text-wrap">
-                <h3>麻酔で痛くない！</h3>
-                <p class="p-lp-reason__text">
-                  オプション料金なしで肌に塗るタイプの麻酔を使用し、お痛みをしっかりやわらげた状態で施術をいたします。
-                </p>
-              </div>
-            </li>
-            <li class="p-lp-reason__item">
-              <p class="p-lp-reason__img">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
-                  alt=""
-                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03.webp"
-                  decoding="async"
-                  class="lazyload"
-                  data-eio-rwidth="690"
-                  data-eio-rheight="488"
-                /><noscript
-                  ><img
-                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03.webp"
-                    alt=""
-                    data-eio="l"
-                  /></noscript
-                >
-              </p>
-              <div class="p-lp-reason__text-wrap">
-                <h3>レーザー除去保証</h3>
-                <p class="p-lp-reason__text">
-                  アートメイク・レーザー除去を低価格で受けられる保証です。施術部位の除去レーザーを両眉1回9,800円で受けられます。<br
-                  />
-                  （両眉通常価格：49,600円）
-                </p>
-                <p class="c-note">
-                  ※医師を指名の場合のみ、指名料が発生いたします。カウンセリングのみでご予約いただいた場合も指名料は発生いたします。
-                </p>
-                <p class="c-center">
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjoAAADyAQAAAABsF1KdAAAAAnRSTlMAAHaTzTgAAAAoSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAABeBkUCAAHOYHGzAAAAAElFTkSuQmCC"
-                    alt="太く不自然な毛を除去"
-                    class="c-image--responsive lazyload"
-                    data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_570,h_242/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03_2.webp"
-                    decoding="async"
-                    data-eio-rwidth="570"
-                    data-eio-rheight="242"
-                  /><noscript
-                    ><img
-                      src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_03_2.webp"
-                      alt="太く不自然な毛を除去"
-                      class="c-image--responsive"
-                      data-eio="l"
-                    /></noscript
-                  >
-                </p>
-                <p class="c-note">
-                  ※除去できるまでに必要な回数には個人差があります。
-                </p>
-              </div>
-            </li>
-            <li class="p-lp-reason__item">
-              <p class="p-lp-reason__img">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAHoAQAAAACd/zEhAAAAAnRSTlMAAHaTzTgAAABASURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgb6fAAAHEufpSAAAAAElFTkSuQmCC"
-                  alt=""
-                  data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_690,h_488/https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_04.webp"
-                  decoding="async"
-                  class="lazyload"
-                  data-eio-rwidth="690"
-                  data-eio-rheight="488"
-                /><noscript
-                  ><img
-                    src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/lp/reason/reason_04.webp"
-                    alt=""
-                    data-eio="l"
-                  /></noscript
-                >
-              </p>
-              <div class="p-lp-reason__text-wrap">
-                <h3>リッチタイムプランもご用意</h3>
-                <p class="p-lp-reason__text">
-                  ゆっくり時間が欲しい方向け、あなたの理想をとことん追求。アーティストとデザインや仕上がりについてじっくり相談したい方におすすめのプランです。
-                </p>
-                <p class="c-center">
-                  <a
-                    href="https://tat1234.xsrv.jp/richtimep/"
-                    class="c-button c-button--arrow c-button--light"
-                    ><span class="c-button__text">詳細はこちら</span></a
-                  >
-                </p>
-              </div>
-            </li>
-          </ul>
+              <h2 class={clsx(styles['c-aside-reserve__heading'])}>
+                空席カレンダー・<br />ご予約はこちら
+              </h2>
 
-          <Steps />
-
-          <Access />
-          <Question />
-
-          <aside class="l-aside u-pc">
-            <div class="l-aside__inner">
-              <div class={clsx(styles['c-aside-reserve'])}>
-                <p class={clsx(styles['c-reserve__label'])}>RESERVATION</p>
-                <p
-                  class="c-speech-bubble c-speech-bubble--gray c-speech-bubble--square c-aside-reserve__bubble"
-                >
-                  <span class={clsx(styles['c-speech-bubble__text'])}
-                    >お得なモニター割引実施中</span
-                  >
-                </p>
-                <h2 class={clsx(styles['c-aside-reserve__heading'])}>
-                  空席カレンダー・<br />ご予約はこちら
-                </h2>
-
-                <img src={imgQR.src} alt="QR" class={styles.logoImage} />
-              </div>
+              <img src={imgQR.src} alt="QR" class={styles.logoImage} />
             </div>
-          </aside>
-        </section>
+          </div>
+        </aside>
+
 
         <Footer />
       </main><!-- /.l-wrapper -->
