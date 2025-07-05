@@ -203,7 +203,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
           <span className="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble">
             <span className="c-speech-bubble__text">お得なモニター募集中！</span>
           </span>
-          <span className="c-float-reserve__title">空席カレンダー&amp;<br className="u-sp" />予約する</span>
+          <span className="c-float-reserve__title">空席カレンダー&amp;予約する</span>
         </a>
       </div>
     </footer >
