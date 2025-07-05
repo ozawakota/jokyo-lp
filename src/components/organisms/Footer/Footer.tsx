@@ -199,7 +199,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
       </ul>
 
       <div className={clsx(styles['c-float-reserve'])}>
-        <a className="c-float-reserve__link c-float-reserve__link--line no-scroll" href="#modal-line" data-effect="mfp-zoom-in">
+        <a className="c-float-reserve__link c-float-reserve__link--line" href="#modal-line">
           <span className="c-speech-bubble c-speech-bubble--white c-float-reserve__bubble">
             <span className="c-speech-bubble__text">お得なモニター募集中！</span>
           </span>
