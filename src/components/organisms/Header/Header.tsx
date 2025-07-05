@@ -58,33 +58,18 @@ export const Header: React.FC<Props> = ({ className }) => {
 
         <div className="l-header__menu-heading u-pc"><span>MENU</span></div>
         <ul className="l-header__list">
-          <li><a href="#about">THE ARTMAKE TOKYOの人気スタイル</a></li>
-
-          <li><a href="#choice">クリニック選び</a></li>
-          <li><a href="#case">眉アートメイク症例</a></li>
-
-          <li><a href="#commitment">THE ARTMAKE TOKYOのこだわり</a></li>
-          <li><a href="#artist">アーティスト一覧</a></li>
-
-
-          <li><a href="#doctor">院長紹介</a></li>
-
-          <li><a href="#feature">THE ARTMAKE TOKYOの特徴</a></li>
+          <li><a href="#example">眉アートメイク除去症例</a></li>
+          <li><a href="#about">西川式除去とは？</a></li>
+          <li><a href="#point">西川式除去のポイント</a></li>
           <li><a href="#price">料金表</a></li>
-          <li><a href="#reason">選ばれる理由</a></li>
-          <li><a href="#steps">施術当日の流れ</a></li>
-
-          <li><a href="#clinic">クリニック情報</a></li>
+          <li><a href="#flow">施術当日の流れ</a></li>
           <li><a href="#access">アクセス</a></li>
-
-          <li><a href="#qa">Q&A</a></li>
+          <li><a href="#qa">よくある質問</a></li>
         </ul>
 
         <ul className="l-header__submenu">
           <li>
-            <a href="https://tat1234.xsrv.jp/p_policy/" target="_blank"
-            >プライバシーポリシー
-            </a>
+            <a href="https://www.the-artmake-tokyo.tokyo/p_policy/" target="_blank" rel='noreferrer noopener'>プライバシーポリシー</a>
           </li>
           <li className="js-to-top"><a href="#">TOPへ戻る</a></li>
         </ul>
@@ -92,7 +77,7 @@ export const Header: React.FC<Props> = ({ className }) => {
         <ul className="l-header__sns">
           <li className="insta">
             <a
-              href="https://www.instagram.com/the_artmake_tokyo/"
+              href="https://www.instagram.com/artmake_removal/"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -103,19 +88,17 @@ export const Header: React.FC<Props> = ({ className }) => {
                 data-src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_insta.svg"
                 decoding="async"
                 className="lazyload"
-              /><noscript
-              ><img
-                  src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_insta.svg"
-                  width="20"
-                  alt="Instagram"
-                  data-eio="l"
-                /></noscript
-              >
+              /><noscript><img
+                src="https://tat1234.xsrv.jp/wp/wp-content/themes/the-artmake-tokyo/assets/images/common/icon_sns_insta.svg"
+                width="20"
+                alt="Instagram"
+                data-eio="l"
+              /></noscript>
             </a>
           </li>
           <li className="tiktok">
             <a
-              href="https://www.tiktok.com/@theartmaketokyo"
+              href="https://www.tiktok.com/@theartmaketokyo?_t=ZS-8xfPgs8hZ0U&_r=1"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -138,6 +121,18 @@ export const Header: React.FC<Props> = ({ className }) => {
             </a>
           </li>
         </ul>
+        <div className={clsx(styles['l-header__more'])}>
+          <p>除去について、もっと知りたい方へ</p>
+          <a
+            href="https://www.the-artmake-tokyo.tokyo/artmaketerrace/artist/dr-%e3%83%80%e3%82%a4%e3%83%81/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span>
+              医師による症例解説
+            </span>
+          </a>
+        </div>
       </nav>
     </header>
 

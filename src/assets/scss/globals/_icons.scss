@@ -1,0 +1,17 @@
+@forward 'mq';
+@forward 'variables';
+@forward 'functions';
+
+@mixin icon_bg() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+//アイコン一覧
+
+//矢印
+@mixin icon_link_extra($color: '000') {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2211%22%20height%3D%2212%22%20viewBox%3D%220%200%2011%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.25%201H1.75C1.41848%201%201.10054%201.1317%200.866117%201.36612C0.631696%201.60054%200.5%201.91848%200.5%202.25V9.75C0.5%2010.0815%200.631696%2010.3995%200.866117%2010.6339C1.10054%2010.8683%201.41848%2011%201.75%2011H9.25C9.58152%2011%209.89946%2010.8683%2010.1339%2010.6339C10.3683%2010.3995%2010.5%2010.0815%2010.5%209.75V7.25M5.5%206L10.5%201M10.5%201V4.125M10.5%201H7.375%22%20stroke%3D%22%23787878%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+  @include icon_bg();
+}

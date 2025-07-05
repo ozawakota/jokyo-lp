@@ -85,17 +85,3 @@ button {
   appearance: none;
   -webkit-appearance: none;
 }
-
-.is-pc {
-  display: none !important;
-
-  @include mq('tb') {
-    display: block !important;
-  }
-}
-
-.is-sp {
-  @include mq('tb') {
-    display: none !important;
-  }
-}
