@@ -3,6 +3,7 @@ import { Header } from '~/components/organisms/Header'
 import { Footer } from '~/components/organisms/Footer'
 import { Question } from '~/components/organisms/Question'
 import { Access } from '~/components/organisms/Access'
+import { Aside } from '~/components/organisms/Aside'
 import { Case } from '~/components/organisms/Case'
 import { About } from '~/components/organisms/About'
 import { Point } from '~/components/organisms/Point'
@@ -15,6 +16,8 @@ import clsx from 'clsx'
 import styles from './Layout.module.scss'
 
 import imgQR from '~/assets/images/img-QR.png'
+import imgQRgs from '~/assets/images/img-QR-gs.png'
+import imgQRinsta from '~/assets/images/img-QR-insta.png'
 import imgtop from '~/assets/images/top.webp'
 ---
 
@@ -198,25 +201,7 @@ import imgtop from '~/assets/images/top.webp'
         <Access />
         <Question />
 
-        <aside class="l-aside u-pc">
-          <div class="l-aside__inner">
-            <div class={clsx(styles['c-aside-reserve'])}>
-              <p class={clsx(styles['c-reserve__label'])}>RESERVATION</p>
-              <p
-                class="c-speech-bubble c-speech-bubble--gray c-speech-bubble--square c-aside-reserve__bubble"
-              >
-                <span class={clsx(styles['c-speech-bubble__text'])}
-                  >お得なモニター割引実施中</span
-                >
-              </p>
-              <h2 class={clsx(styles['c-aside-reserve__heading'])}>
-                空席カレンダー・<br />ご予約はこちら
-              </h2>
-
-              <img src={imgQR.src} alt="QR" class={styles.logoImage} />
-            </div>
-          </div>
-        </aside>
+        <Aside client:load />
 
         <Footer client:load />
       </main><!-- /.l-wrapper -->

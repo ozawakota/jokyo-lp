@@ -128,7 +128,7 @@ export const Case: React.FC = () => {
         </div>
         <div className={clsx(styles['p-lp-case__more'])}>
           <p className={clsx(styles['text'])}>
-            <span>もっと知りたい方へ</span>
+            <span>除去について、もっと知りたい方へ</span>
           </p>
           <ul className={clsx(styles['list'])}>
             <li>

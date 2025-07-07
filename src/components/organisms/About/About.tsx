@@ -3,6 +3,7 @@ import styles from './About.module.scss'
 import clsx from 'clsx'
 
 
+
 export const About: React.FC = () => {
   return (
     <section className={clsx(styles['p-lp-about'])} id="about">
