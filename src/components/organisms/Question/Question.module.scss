@@ -2,6 +2,11 @@
   padding-bottom: 60px;
 }
 
+:global(.c-heading) {
+  font-weight: bold;
+}
+
+
 .answer {
   strong {
     font-weight: bold;
