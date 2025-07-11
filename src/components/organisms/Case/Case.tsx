@@ -120,7 +120,9 @@ export const Case: React.FC = () => {
       </ul>
 
       <div className={clsx(styles['p-lp-case__contents'])}>
-        <img src="./assets/images/lp/case/case-img1.webp" alt="" />
+        <a href="https://www.instagram.com/artmake_removal/" target='_blank' rel="noreferrer">
+          <img src="./assets/images/lp/case/case-img1.webp" alt="" />
+        </a>
         <div className={clsx(styles['p-lp-case__sns'])}>
           <a href="https://www.instagram.com/artmake_removal/" className={clsx(styles['instagram'])}>
             <span>公式Instagramを見る</span>
